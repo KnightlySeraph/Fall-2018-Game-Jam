@@ -4,8 +4,13 @@ vsp = 0;
 temphsp = 0;
 tempvsp = 0;
 
-flyspd = 6;
-movespd = 8;
+templimit = 25;
+
+bigbounce = 25;
+smallbounce = 15;
+
+flyspd = 10;
+movespd = 13;
 
 updown = 0;
 leftright = 0;

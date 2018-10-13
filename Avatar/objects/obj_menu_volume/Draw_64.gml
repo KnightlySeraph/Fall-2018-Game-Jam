@@ -1,18 +1,21 @@
 /// @description Insert description here
-// You can write your code in this editor
+//set up background effect
 draw_set_color(c_black);
 draw_set_alpha(0.6);
 draw_rectangle(0, 0, gui_width, gui_height, 0);
 
+//set up for menu display
 draw_set_alpha(1);
 draw_set_font(fMenu);
 draw_set_halign(fa_middle);
 draw_set_valign(fa_center);
 
+//temporary variables
 var col;
 var xx;
 var yy;
 
+//creates and highlights menu
 for(var i = 0; i < menu_items; i++)
 {
 	var txt = menu[i];
@@ -77,6 +80,7 @@ for(var i = 0; i < menu_items; i++)
 	}
 }
 
+//creates labels
 for(var n = 0; n < label_items; n++)
 {
 	col = c_silver;
@@ -102,7 +106,7 @@ for(var n = 0; n < label_items; n++)
 	}
 }
 
-
+//creates and updates slidebars
 for(var m = 0; m <= 3; m++)
 {
 	if(m == 0)
@@ -131,6 +135,7 @@ for(var m = 0; m <= 3; m++)
 	}
 }
 
+//creates and updates volume #
 for(var k = 0; k < 2; k++)
 {
 	col = c_silver;

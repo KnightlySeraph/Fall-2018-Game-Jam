@@ -1,5 +1,5 @@
 /// @description Control menu
-
+//updates which menu option is selected
 if(menu_control)
 {
 	if(keyboard_check_pressed(vk_up))
@@ -15,7 +15,6 @@ if(menu_control)
 	if(keyboard_check_pressed(vk_enter))
 	{
 		menu_committed = menu_cursor;
-		//menu_control = false;
 	}
 	
 	var mouse_y_gui = device_mouse_y_to_gui(0);
@@ -74,6 +73,7 @@ if(menu_control)
 	}
 }
 
+//actions to take when menu option is selected
 if(menu_committed != -1)
 {
 	switch(menu_committed)
@@ -115,6 +115,7 @@ if(menu_committed != -1)
 	}
 }
 
+//sets game volume to use
 game_volume = ((menu_y - menu_itemheight * 1.5 * 3) - game_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 music_volume = ((menu_y - menu_itemheight * 1.5 * 3) - music_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 global.vol_gam = game_volume;

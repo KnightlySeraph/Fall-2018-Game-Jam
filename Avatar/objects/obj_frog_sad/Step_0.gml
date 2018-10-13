@@ -83,3 +83,9 @@ switch(state)
 		break;
 }
 
+
+if(place_meeting(x,y,obj_wind))
+{
+	instance_destroy();
+}
+

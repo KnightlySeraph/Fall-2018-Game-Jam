@@ -42,10 +42,12 @@ switch(state)
 		if(player_x > x)
 		{
 			image_xscale = -1;
+			direct = 1;
 		}
 		else
 		{
 			image_xscale = 1;	
+			direct = -1;
 		}
 	
 		if(movetype == "regular")
@@ -83,11 +85,16 @@ switch(state)
 		break;
 }
 
-if(attack)
+if(can_attack)
 {
-	if((player_y + 20 > y && player_y - 20 < y) || collision_line(x,y,original_x,player_y,obj_wall,false,false))
+	if((player_y + 20 > y && player_y - 20 < y) && !collision_line(x,y,original_x,player_y,obj_wall,false,false))
 	{
-		
+		can_attack = false;
+		with(instance_create_depth(x,y - 80,depth + 1, obj_projectile))
+		{
+			state = "forward";
+			direct = other.direct;
+		}
 	}
 }
 

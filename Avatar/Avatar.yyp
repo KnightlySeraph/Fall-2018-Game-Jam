@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "e19dda62-a67f-4f78-9016-f608886d6c83",
+            "Value": {
+                "id": "923b76b8-aa12-4f05-b322-8662343b23a2",
+                "resourcePath": "sprites\\spr_frog_sad_attack\\spr_frog_sad_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e516cdd4-507e-4bcb-b4d0-b2f37075e6b9",
             "Value": {
                 "id": "87dc7692-b006-4100-98d4-e4902fb9b31a",

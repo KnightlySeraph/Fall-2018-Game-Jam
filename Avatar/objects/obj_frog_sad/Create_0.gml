@@ -3,11 +3,11 @@ direct = -1;
 
 spd = 15;
 
-moverange = 750;
+moverange = 1500;
 
-maxdistance = 100;
+maxdistance = 250;
 
-move_distance = 250;
+move_distance = 350;
 
 state = "idle";
 

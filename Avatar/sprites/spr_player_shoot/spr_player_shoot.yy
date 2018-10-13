@@ -99,7 +99,7 @@
         }
     ],
     "origin": 9,
-    "originLocked": false,
+    "originLocked": true,
     "playbackSpeed": 11,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,

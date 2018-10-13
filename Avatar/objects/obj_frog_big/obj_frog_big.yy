@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "obj_frog_big",
     "eventList": [
-        
+        {
+            "id": "f31c4592-9056-46ce-8ed2-55b24054e08e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "25ab997b-6530-4282-b9f3-15b988096f2f"
+        },
+        {
+            "id": "fe80cf53-05b7-4a0c-a78c-d01b244922f9",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "25ab997b-6530-4282-b9f3-15b988096f2f"
+        },
+        {
+            "id": "252074b6-da89-4698-b06f-1b14ca67389d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "25ab997b-6530-4282-b9f3-15b988096f2f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

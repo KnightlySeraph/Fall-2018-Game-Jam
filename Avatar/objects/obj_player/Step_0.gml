@@ -26,7 +26,7 @@ if(keyboard_check(ord("D")))
 	if(temphsp < templimit) temphsp += 1;
 }
 
-if(keyboard_check(vk_enter)) shooting = true;
+if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
 else shooting = false;
 
 //HSP is equal to the speed plus the temp hsp
@@ -91,15 +91,48 @@ if(shooting)
 {
 	if(!instance_exists(obj_wind))
 	{
-		instance_create_depth(x,y,depth, obj_wind);
+		if(direct > 0)
+		{
+			instance_create_depth(x+80,y-30,depth,obj_wind);
+		}
+		else
+		{
+			with(instance_create_depth(x-80,y-30,depth,obj_wind))
+			{
+				image_xscale = -1;	
+			}
+		}
 	}
 	temphsp += -direct * 1;
+	windPower -= 2;
+	if(windPower <= 0)
+	{
+		recharge = true;	
+	}
+	alarm[0] = 30;
+	refillWind = false;
 }
 else
 {
 	if(instance_exists(obj_wind))
 	{
 		instance_destroy(obj_wind);	
+	}
+	if(refillWind)
+	{
+		if(windPower < windMax)
+		{
+			windPower += 2;
+			if(windPower >= windMax / 2)
+			{
+				recharge = false;	
+			}
+		}
+		else
+		{
+			recharge = false;	
+			refillWind = false;
+		}
 	}
 }
 
@@ -127,6 +160,6 @@ if(shooting)
 }
 else
 {
-	sprite_index = spr_player_test;	
+	sprite_index = spr_player_idle;	
 }
 

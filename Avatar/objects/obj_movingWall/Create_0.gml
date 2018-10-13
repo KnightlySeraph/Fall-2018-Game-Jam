@@ -3,6 +3,8 @@
 //Set receivingBottomFacingInput to true to move the platform up
 //Turn off to make the wall move towards its original position
 
+puzzle_num = 0;  //Must have same value as coorespponding pinwheel
+
 //WARNINGS
 //There is no implementation for TopFacingInput do not use
 

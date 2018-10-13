@@ -7,7 +7,10 @@
         "c52226b8-852f-4f58-87f5-474023bb986e",
         "a76ff95a-bcc1-401b-93fc-74a09126a3e7",
         "4dc27d83-79b5-43f4-8604-f004c069cf22",
-        "bfcba529-62e3-4a88-9a02-3625bb40b580"
+        "bfcba529-62e3-4a88-9a02-3625bb40b580",
+        "3faf7671-59af-4dcb-9c6c-b494a3882a35",
+        "2ff1fe7e-3e41-41d5-96a1-fd16b3e2e412",
+        "3ee17459-2891-4636-9d7c-c5c490e3fae9"
     ],
     "filterType": "GMObject",
     "folderName": "Menu",

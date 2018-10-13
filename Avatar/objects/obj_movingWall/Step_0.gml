@@ -32,17 +32,17 @@ if (allowUp){
 			receivedInput = true;	
 		}
 		//Player Collision Interaction --Alex
-			if(place_meeting(x, y + (moveSpeed / 2), obj_player))
+			if(place_meeting(x, y - (moveSpeed / 2), obj_player))
 			{
-				while(!place_meeting(x, y + sign(moveSpeed / 2), obj_player))
+				while(!place_meeting(x, y - sign(moveSpeed / 2), obj_player))
 				{
 					//show_debug_message("Player Collision Block");
 					y -= sign(moveSpeed / 2);	
 				}
 				//If moving left or right, big bounce
-				if(obj_player.updown != 0) obj_player.tempvsp = 17 * sign(moveSpeed / 2);
+				if(obj_player.updown != 0) obj_player.tempvsp = obj_player.bigbounce * -sign(moveSpeed / 2);
 				//Else, small bounce
-				else obj_player.tempvsp = 6 * sign(moveSpeed / 2);
+				else obj_player.tempvsp = obj_player.smallbounce * -sign(moveSpeed / 2);
 
 			}
 			else
@@ -66,16 +66,16 @@ if (allowUp){
 	//Continue moving right under no input
 	if (!receivingBottomFacingInput && receivedInput){
 		//Player Collsion Block --Alex
-		if(place_meeting(x, y+(moveSpeed / 2), obj_player))
+		if(place_meeting(x, y-(moveSpeed / 2), obj_player))
 		{
-			while(!place_meeting(x, y+sign(moveSpeed / 2), obj_player))
+			while(!place_meeting(x, y-sign(moveSpeed / 2), obj_player))
 			{
 				y -= sign(moveSpeed / 2);	
 			}
 			//If moving left or right, big bounce
-			if(obj_player.leftright != 0) obj_player.temphsp = 17 * sign(moveSpeed / 2);
+			if(obj_player.updown != 0) obj_player.tempvsp = obj_player.bigbounce * -sign(moveSpeed / 2);
 			//Else, small bounce
-			else obj_player.temphsp = 6 * sign(moveSpeed / 2);
+			else obj_player.tempvsp = obj_player.smallbounce * -sign(moveSpeed / 2);
 
 		}
 		else
@@ -96,16 +96,16 @@ if (allowUp){
 	if (!receivingBottomFacingInput && !receivedInput){
 		if (y < originalPosY) {
 			//Player Collision Block	--Alex
-			if(place_meeting(x, y - (moveSpeed * 10), obj_player))
+			if(place_meeting(x, y + (moveSpeed * 10), obj_player))
 			{
-				while(!place_meeting(x, y - sign(moveSpeed * 10), obj_player))
+				while(!place_meeting(x, y + sign(moveSpeed * 10), obj_player))
 				{
 					y += sign(moveSpeed * 10);	
 				}
 				//If moving left or right, big bounce
-				if(obj_player.leftright != 0) obj_player.temphsp = 17 * -sign(moveSpeed * 10);
+				if(obj_player.updown != 0) obj_player.tempvsp = obj_player.bigbounce * sign(moveSpeed * 10);
 				//Else, small bounce
-				else obj_player.temphsp = 6 * -sign(moveSpeed * 10);
+				else obj_player.tempvsp = obj_player.smallbounce * sign(moveSpeed * 10);
 
 			}
 			else

@@ -24,3 +24,5 @@ menu_items = array_length_1d(menu);
 menu_cursor = 4;
 
 menu_top = menu_y - menu_itemheight * 1.5 * menu_items;
+
+instance_deactivate_object(self);

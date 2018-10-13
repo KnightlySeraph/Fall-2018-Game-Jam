@@ -40,6 +40,7 @@ if(menu_committed != -1)
 			instance_activate_object(obj_menu_options);
 			instance_deactivate_object(self);
 			menu_committed = -1;
+			global.pausestep += 1;
 			break;
 		case 2:
 			room_goto(rm_menu_main);

@@ -26,6 +26,9 @@ if(keyboard_check(ord("D")))
 	if(temphsp < templimit) temphsp += 1;
 }
 
+if(keyboard_check(vk_enter)) shooting = true;
+else shooting = false;
+
 //HSP is equal to the speed plus the temp hsp
 hsp = ((leftright * movespd) + temphsp);
 //If hsp is more than 15, make it 15 and decrease temp hsp
@@ -83,6 +86,25 @@ if(place_meeting(x, y + vsp, obj_wall))
 	vsp = 0;
 }
 
+//SHOOTING
+if(shooting)
+{
+	if(!instance_exists(obj_wind))
+	{
+		instance_create_depth(x,y,depth, obj_wind);
+	}
+	temphsp += -direct * 1;
+}
+else
+{
+	if(instance_exists(obj_wind))
+	{
+		instance_destroy(obj_wind);	
+	}
+}
+
+
+
 //Move player
 x += hsp;
 y += vsp;
@@ -91,9 +113,20 @@ y += vsp;
 if(leftright > 0)
 {
 	image_xscale = 1;	
+	direct = 1;
 }
 else if(leftright < 0)
 {
-	image_xscale = -1;	
+	image_xscale = -1;
+	direct = -1;
+}
+
+if(shooting)
+{
+	sprite_index = spr_player_shoot;	
+}
+else
+{
+	sprite_index = spr_player_test;	
 }
 

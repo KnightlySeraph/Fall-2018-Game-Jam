@@ -26,7 +26,7 @@ if(keyboard_check(ord("D")))
 	if(temphsp < templimit) temphsp += 1;
 }
 
-if(keyboard_check(vk_enter)) shooting = true;
+if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
 else shooting = false;
 
 //HSP is equal to the speed plus the temp hsp
@@ -94,12 +94,38 @@ if(shooting)
 		instance_create_depth(x,y,depth, obj_wind);
 	}
 	temphsp += -direct * 1;
+	windPower -= 2;
+	if(windPower <= 0)
+	{
+		recharge = true;	
+	}
+	alarm[0] = 30;
+	refillWind = false;
 }
 else
 {
 	if(instance_exists(obj_wind))
 	{
 		instance_destroy(obj_wind);	
+	}
+	if(refillWind)
+	{
+		if(windPower < windMax)
+		{
+			if(recharge)
+			{
+				windPower += 1;	
+			}
+			else
+			{
+				windPower += 2;	
+			}
+		}
+		else
+		{
+			recharge = false;	
+			refillWind = false;
+		}
 	}
 }
 

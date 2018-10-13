@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "4c722336-b5a3-4bd5-ac68-5538370b4daa",
+            "Value": {
+                "id": "e457e789-c13f-427b-a3f1-6466b6d817ba",
+                "resourcePath": "sprites\\spr_player_shoot_down\\spr_player_shoot_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4dc27d83-79b5-43f4-8604-f004c069cf22",
             "Value": {
                 "id": "9602dd50-feb6-4bfa-bcda-d08626fee3cf",
@@ -235,6 +243,14 @@
             "Value": {
                 "id": "b124e581-949d-4b05-9e55-b2469e446e0f",
                 "resourcePath": "sprites\\spr_frog_sad\\spr_frog_sad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "59cf6ee5-1df2-4653-b44d-6f64736865cf",
+            "Value": {
+                "id": "c3ea1d9f-9478-4c1f-b64e-27143e2ea2cc",
+                "resourcePath": "sprites\\spr_player_move_down\\spr_player_move_down.yy",
                 "resourceType": "GMSprite"
             }
         },

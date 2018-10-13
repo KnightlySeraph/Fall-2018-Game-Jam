@@ -164,6 +164,10 @@ if(shooting)
 	{
 		sprite_index = spr_player_shoot_up;	
 	}
+	else if(updown > 0)
+	{
+		sprite_index = spr_player_shoot_down;	
+	}
 	else
 	{
 		sprite_index = spr_player_shoot;	
@@ -178,6 +182,10 @@ else
 	else if(updown < 0)
 	{
 		sprite_index = spr_player_move_up;	
+	}
+	else if(updown > 0)
+	{
+		sprite_index = spr_player_move_down;	
 	}
 	else
 	{

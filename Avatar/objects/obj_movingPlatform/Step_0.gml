@@ -4,10 +4,10 @@ if (receivingLeftFacingInput) { receivingRightFacingInput = false; }
 if (receivingRightFacingInput) { receivingLeftFacingInput = false; }
 
 //Testing Controls
-if (keyboard_check(ord("D"))) { receivingLeftFacingInput = true; allowRight = true; allowLeft = false; }
-if (keyboard_check_released(ord("D"))) { receivingLeftFacingInput = false; }
-if (keyboard_check(ord("A"))) { receivingRightFacingInput = true; allowLeft = true; allowRight = false; }
-if (keyboard_check_released(ord("A"))) { receivingRightFacingInput = false; }
+if (keyboard_check(vk_space)) { receivingLeftFacingInput = true; allowRight = true; allowLeft = false; }
+if (keyboard_check_released(vk_space)) { receivingLeftFacingInput = false; }
+//if (keyboard_check(ord("A"))) { receivingRightFacingInput = true; allowLeft = true; allowRight = false; }
+//if (keyboard_check_released(ord("A"))) { receivingRightFacingInput = false; }
 
 //For Player Link
 //Set Allow Right while receiving Left Facing
@@ -28,7 +28,22 @@ if (allowRight){
 		if (!receivedInput){
 			receivedInput = true;	
 		}
-		x += moveSpeed / 2;
+		if(place_meeting(x+(moveSpeed / 2), y, obj_player))
+		{
+			while(!place_meeting(x+sign(moveSpeed / 2), y, obj_player))
+			{
+				x += sign(moveSpeed / 2);	
+			}
+			//If moving left or right, big bounce
+			if(obj_player.leftright != 0) obj_player.temphsp = 17 * sign(moveSpeed / 2);
+			//Else, small bounce
+			else obj_player.temphsp = 6 * sign(moveSpeed / 2);
+
+		}
+		else
+		{
+			x += moveSpeed / 2;
+		}
 		if (moveSpeed < termialSpeed){
 			moveSpeed += momentum;	
 		}
@@ -43,7 +58,22 @@ if (allowRight){
 
 	//Continue moving right under no input
 	if (!receivingLeftFacingInput && receivedInput){
-		x += moveSpeed / 2;
+		if(place_meeting(x+(moveSpeed / 2), y, obj_player))
+		{
+			while(!place_meeting(x+sign(moveSpeed / 2), y, obj_player))
+			{
+				x += sign(moveSpeed / 2);	
+			}
+			//If moving left or right, big bounce
+			if(obj_player.leftright != 0) obj_player.temphsp = 17 * sign(moveSpeed / 2);
+			//Else, small bounce
+			else obj_player.temphsp = 6 * sign(moveSpeed / 2);
+
+		}
+		else
+		{
+			x += moveSpeed / 2;
+		}
 		if (moveSpeed > originalMoveSpeed){
 			moveSpeed -= momentum; 
 		}	
@@ -56,7 +86,22 @@ if (allowRight){
 	//Move back to origin
 	if (!receivingLeftFacingInput && !receivedInput){
 		if (x > originalPosX) {
-			x -= moveSpeed * 10;	
+			if(place_meeting(x-(moveSpeed * 10), y, obj_player))
+			{
+				while(!place_meeting(x-sign(moveSpeed * 10), y, obj_player))
+				{
+					x -= sign(moveSpeed * 10);	
+				}
+				//If moving left or right, big bounce
+				if(obj_player.leftright != 0) obj_player.temphsp = 17 * -sign(moveSpeed * 10);
+				//Else, small bounce
+				else obj_player.temphsp = 6 * -sign(moveSpeed * 10);
+
+			}
+			else
+			{
+				x -= moveSpeed * 10;	
+			}
 		}
 	}
 }

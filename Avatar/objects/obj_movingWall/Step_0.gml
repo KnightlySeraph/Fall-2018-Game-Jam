@@ -4,10 +4,13 @@ if (receivingBottomFacingInput) { receivingTopFacingInput = false; }
 if (receivingTopFacingInput) { receivingBottomFacingInput = false; }
 
 //Testing Controls
-if (keyboard_check(vk_up)) { receivingBottomgFacingInput = true; allowUp = true; allowDown = false; }
+if (keyboard_check(vk_up)) { receivingBottomFacingInput = true; allowUp = true; allowDown = false; }
 if (keyboard_check_released(vk_up)) { receivingBottomFacingInput = false; }
 //if (keyboard_check(vk_down)) { receivingRightFacingInput = true; allowLeft = true; allowRight = false; }
 //if (keyboard_check_released(vk_down)) { receivingRightFacingInput = false; }
+
+//Console Log Controls
+if (keyboard_check_pressed(ord("T"))) { show_debug_message ("Object Y Pos is: " + string(y) + "		Original Y is: " + string(originalPosY) + "		maxRange is: " + string(maxRange)); }
 
 //Player Links
 if (receivingBottomFacingInput){
@@ -22,7 +25,9 @@ if (receivingTopFacingInput) {
 
 //========================UPWARDS MOVEMENT===========================
 if (allowUp){
+	//show_debug_message("allowUp Entered");
 	if (receivingBottomFacingInput) {
+		//show_debug_message("Entered bottom facing");
 		if (!receivedInput){
 			receivedInput = true;	
 		}
@@ -31,7 +36,8 @@ if (allowUp){
 			{
 				while(!place_meeting(x, y + sign(moveSpeed / 2), obj_player))
 				{
-					y += sign(moveSpeed / 2);	
+					//show_debug_message("Player Collision Block");
+					y -= sign(moveSpeed / 2);	
 				}
 				//If moving left or right, big bounce
 				if(obj_player.updown != 0) obj_player.tempvsp = 17 * sign(moveSpeed / 2);
@@ -41,14 +47,15 @@ if (allowUp){
 			}
 			else
 			{
-				y += moveSpeed / 2;
+				//show_debug_message("Moving Up");
+				y -= moveSpeed / 2;
 			}
 		//--End Player Collision
 		if (moveSpeed < termialSpeed){
 			moveSpeed += momentum;	
 		}
 		//Force a range check
-		if ( y >= maxRange){
+		if ( y <= maxRange){
 			y = maxRange;
 			receivedInput = false;
 			moveSpeed = originalMoveSpeed;
@@ -63,7 +70,7 @@ if (allowUp){
 		{
 			while(!place_meeting(x, y+sign(moveSpeed / 2), obj_player))
 			{
-				y += sign(moveSpeed / 2);	
+				y -= sign(moveSpeed / 2);	
 			}
 			//If moving left or right, big bounce
 			if(obj_player.leftright != 0) obj_player.temphsp = 17 * sign(moveSpeed / 2);
@@ -73,7 +80,7 @@ if (allowUp){
 		}
 		else
 		{
-			y += moveSpeed / 2;
+			y -= moveSpeed / 2;
 		}
 		// --End Player Collision Block
 		if (moveSpeed > originalMoveSpeed){
@@ -87,13 +94,13 @@ if (allowUp){
 
 	//Move back to origin
 	if (!receivingBottomFacingInput && !receivedInput){
-		if (y > originalPosY) {
+		if (y < originalPosY) {
 			//Player Collision Block	--Alex
 			if(place_meeting(x, y - (moveSpeed * 10), obj_player))
 			{
 				while(!place_meeting(x, y - sign(moveSpeed * 10), obj_player))
 				{
-					y -= sign(moveSpeed * 10);	
+					y += sign(moveSpeed * 10);	
 				}
 				//If moving left or right, big bounce
 				if(obj_player.leftright != 0) obj_player.temphsp = 17 * -sign(moveSpeed * 10);
@@ -103,7 +110,7 @@ if (allowUp){
 			}
 			else
 			{
-				y -= moveSpeed * 10;	
+				y += moveSpeed * 10;	
 			}
 			//--End Player Collision Block
 		}

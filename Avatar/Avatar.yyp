@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "4dc27d83-79b5-43f4-8604-f004c069cf22",
+            "Value": {
+                "id": "9602dd50-feb6-4bfa-bcda-d08626fee3cf",
+                "resourcePath": "objects\\obj_menu_main\\obj_menu_main.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a149ea8-6e2a-43d5-9974-4aca4b52a5ff",
             "Value": {
                 "id": "e762869e-52e6-49ab-9ef0-e6919cc3dea0",
@@ -95,6 +103,14 @@
             }
         },
         {
+            "Key": "6d67eff2-5613-467c-b233-d3d62f282e4e",
+            "Value": {
+                "id": "09e068b2-e64a-4e89-9e82-27dc1d35b592",
+                "resourcePath": "objects\\obj_ballon\\obj_ballon.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "724048f2-c05b-4f9a-bc44-ff70d2d00e98",
             "Value": {
                 "id": "a112e56b-a78f-4d6f-acf2-cb59e0c65048",
@@ -108,6 +124,14 @@
                 "id": "11e367aa-4357-4797-9a3f-f2a938b24fd5",
                 "resourcePath": "views\\85473d81-ce8d-43aa-b3b2-aa2573688351.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "896676b7-fca8-43d7-afbe-1bf515efeb6e",
+            "Value": {
+                "id": "2dd15a14-26fd-4a15-99d7-c686599ce5da",
+                "resourcePath": "rooms\\rm_menu_main\\rm_menu_main.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -191,6 +215,14 @@
             }
         },
         {
+            "Key": "ae72061c-db5c-41ea-aee4-fc2c583df352",
+            "Value": {
+                "id": "f117bca5-fe8e-4d18-9ed2-9b2545857916",
+                "resourcePath": "objects\\obj_crate\\obj_crate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b2286dc8-eb0f-4369-9bda-737c920ee5de",
             "Value": {
                 "id": "131c1cdf-dd89-4e54-bc9d-ea5f8d0a806d",
@@ -204,6 +236,14 @@
                 "id": "f96a554e-7767-4a02-97ec-4ba0e59a2624",
                 "resourcePath": "views\\b8fa9977-4319-4daf-90dc-2d49a09e86f0.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bc4607de-743d-4935-a37a-480bc3029a1f",
+            "Value": {
+                "id": "1d9b37ed-0371-44a8-8366-8121189514ee",
+                "resourcePath": "fonts\\fMenu\\fMenu.yy",
+                "resourceType": "GMFont"
             }
         },
         {

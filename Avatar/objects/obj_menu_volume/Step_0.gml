@@ -51,6 +51,10 @@ if(menu_control)
 			menu_committed = menu_cursor;
 		}
 	}
+	else if(mouse_y_gui <= menu_y - menu_itemheight * 1.5 * 3) && (mouse_y_gui >= menu_y - menu_itemheight * 1.5 * 13)
+	{
+		
+	}
 }
 
 if(menu_committed != -1)

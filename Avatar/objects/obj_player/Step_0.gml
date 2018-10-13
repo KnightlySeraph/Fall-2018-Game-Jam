@@ -91,7 +91,17 @@ if(shooting)
 {
 	if(!instance_exists(obj_wind))
 	{
-		instance_create_depth(x,y,depth, obj_wind);
+		if(direct > 0)
+		{
+			instance_create_depth(x+80,y-30,depth,obj_wind);
+		}
+		else
+		{
+			with(instance_create_depth(x-80,y-30,depth,obj_wind))
+			{
+				image_xscale = -1;	
+			}
+		}
 	}
 	temphsp += -direct * 1;
 	windPower -= 2;
@@ -112,13 +122,10 @@ else
 	{
 		if(windPower < windMax)
 		{
-			if(recharge)
+			windPower += 2;
+			if(windPower >= windMax / 2)
 			{
-				windPower += 1;	
-			}
-			else
-			{
-				windPower += 2;	
+				recharge = false;	
 			}
 		}
 		else

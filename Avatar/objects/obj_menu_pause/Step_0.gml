@@ -41,15 +41,23 @@ if(menu_committed != -1)
 			menu_committed = -1;
 			break;
 		case 2:
-			show_debug_message("These buttons don't work.");
+			room_goto(rm_menu_main);
+			global.pause = false;
 			menu_committed = -1;
 			break;
 		case 3:
-			show_debug_message("These buttons don't work.");
+			room_restart();
+			global.pause = false;
 			menu_committed = -1;
 			break;
 		case 4:
-			room_goto(rm_test_pause);
+			show_debug_message("These buttons don't work.");
+			menu_committed = -1;
+			break;
+		case 5:
+			global.pause = false;
+			instance_activate_all();
+			instance_deactivate_object(self);
 			menu_committed = -1;
 			break;
 		default:

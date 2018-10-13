@@ -26,11 +26,13 @@ hsp = ((leftright * movespd) + temphsp);
 if(abs(hsp) > 15) 
 {
 	hsp = sign(hsp) * 15;
+	temphsp -= 0.5 * sign(temphsp);
 }
 vsp = ((updown * flyspd) + tempvsp);
 if(abs(vsp) > 15) 
 {
 	vsp = sign(vsp) * 15;
+	tempvsp -= 0.5 * sign(tempvsp);
 }
 
 if(tempvsp != 0)
@@ -48,7 +50,9 @@ if(place_meeting(x+hsp, y, obj_wall))
 	{
 		x += sign(hsp);	
 	}
-	temphsp = 17 * -sign(hsp);
+	if(leftright != 0) temphsp = 17 * -sign(hsp);
+	else temphsp = 6 * -sign(hsp);
+
 	hsp = 0;
 }
 
@@ -58,7 +62,9 @@ if(place_meeting(x, y + vsp, obj_wall))
 	{
 		y += sign(vsp);	
 	}
-	tempvsp = 17 * -sign(vsp);
+	if(updown != 0) tempvsp = 17 * -sign(vsp);
+	else tempvsp = 6 * -sign(vsp);
+
 	vsp = 0;
 }
 

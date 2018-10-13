@@ -1,61 +1,105 @@
-/// @description Move Platform
-//For Debug
-if (keyboard_check_pressed(ord("D"))) { isMovingRight = true; }
-if (keyboard_check_pressed(ord("A"))) { isMovingLeft = true; }
-if (keyboard_check(ord("D"))) { x += moveSpeed; }
-if (keyboard_check(ord("A"))) { x -= moveSpeed }
-//Print Debug Log
-if (keyboard_check_pressed(ord("E"))){
-	show_debug_message("isMovingRight is : " + string(isMovingRight));
-	show_debug_message("isMovingLeft is : " + string(isMovingLeft));
-	show_debug_message("isMovingTowardsOrigin is : " + string(isMovingTowardsOrigin));
-	show_debug_message("Object Location (x,y) is (" + string(x) + ", " + string(y) + ")"); 
+///@description Move Platform based on Player Input
+//Disallow the ability to perform both inputs
+if (receivingLeftFacingInput) { receivingRightFacingInput = false; }
+if (receivingRightFacingInput) { receivingLeftFacingInput = false; }
+
+//Testing Controls
+if (keyboard_check(ord("D"))) { receivingLeftFacingInput = true; allowRight = true; allowLeft = false; }
+if (keyboard_check_released(ord("D"))) { receivingLeftFacingInput = false; }
+if (keyboard_check(ord("A"))) { receivingRightFacingInput = true; allowLeft = true; allowRight = false; }
+if (keyboard_check_released(ord("A"))) { receivingRightFacingInput = false; }
+
+//For Player Link
+//Set Allow Right while receiving Left Facing
+if (receivingLeftFacingInput) {
+	allowRight = true;
+	allowLeft = false;
 }
-//Enforce one or the other type of movement
-if(isMovingLeft){
-	isMovingRight = false;
-	isMovingTowardsOrigin = false;
+
+//Set Allow Left while receiving Right Facing
+if (receivingRightFacingInput) {
+	allowLeft = true;
+	allowRight = false;
 }
-if(isMovingRight){
-	isMovingLeft = false;	
-	isMovingTowardsOrigin = false;
-}
-if(isMovingTowardsOrigin){
-	isMovingLeft = false;
-	isMovingRight = false;
-}
-//Do the movements
-if (isMovingLeft){
-	x -= moveSpeed;
-	if(x < minRange){
-		//Start Alarm of 2 Seconds
+
+//========================RIGHT MOVEMENT===================
+if (allowRight){
+	if (receivingLeftFacingInput) {
+		if (!receivedInput){
+			receivedInput = true;	
+		}
+		x += moveSpeed / 2;
+		if (moveSpeed < termialSpeed){
+			moveSpeed += momentum;	
+		}
+		//Force a range check
+		if ( x >= maxRange){
+			x = maxRange;
+			receivedInput = false;
+			moveSpeed = originalMoveSpeed;
+		}
+	}
+
+
+	//Continue moving right under no input
+	if (!receivingLeftFacingInput && receivedInput){
+		x += moveSpeed / 2;
+		if (moveSpeed > originalMoveSpeed){
+			moveSpeed -= momentum; 
+		}	
 		if (!alarm_ticking){
 			alarm_ticking = true;
 			alarm[0] = 60;
+		}	
+	}
+
+	//Move back to origin
+	if (!receivingLeftFacingInput && !receivedInput){
+		if (x > originalPosX) {
+			x -= moveSpeed * 10;	
 		}
 	}
 }
-if (isMovingRight){
-	x += moveSpeed;
-	if(x > maxRange){
-		//Start Alarm of 2 Seconds
+
+
+//====================LEFT MOVEMENT=================
+if (allowLeft) {
+	if (receivingRightFacingInput) {
+		if (!receivedInput){
+			receivedInput = true;	
+		}
+		x -= moveSpeed / 2;
+		if (moveSpeed < termialSpeed){
+			moveSpeed += momentum;	
+		}
+		//Force a range check
+		if ( x <= minRange){
+			x = minRange;
+			receivedInput = false;
+			moveSpeed = originalMoveSpeed;
+		}
+	}
+
+
+
+	//Continue moving right under no input
+	if (!receivingRightFacingInput && receivedInput){
+		x -= moveSpeed / 2;
+		if (moveSpeed > originalMoveSpeed){
+			moveSpeed -= momentum; 
+		}	
 		if (!alarm_ticking){
 			alarm_ticking = true;
-			alarm[1] = 60;
+			alarm[0] = 60;
 		}	
 	}
-}
-if (isMovingTowardsOrigin) {
-	if (x > originalPosX){
-		x -= moveSpeed;
+
+	//Move back to origin
+	if (!receivingRightFacingInput && !receivedInput){
+		if (x < originalPosX) {
+			x += moveSpeed * 10;	
+		}
 	}
-	else{
-		x += moveSpeed;	
-	}
-	if (x == originalPosX){
-		//Set all possible states to false
-		isMovingLeft = false;
-		isMovingRight = false;
-		isMovingTowardsOrigin = false;
-	}
+
+
 }

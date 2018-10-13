@@ -29,10 +29,15 @@ menu_cursor = 4;
 
 menu_top = menu_y - menu_itemheight * 1.5 * menu_items;
 
-game_volume = global.snd_vol;
-music_volume = global.snd_mus;
+game_volume = global.vol_gam;
+music_volume = global.vol_mus;
 
 game_height = menu_y - menu_itemheight * 1.5 * 13;
 music_height = menu_y - menu_itemheight * 1.5 * 13;
+gam_vol_b4off = game_height;
+mus_vol_b4off = music_height;
+
+audio_group_load(snd_group_effects);
+audio_group_load(snd_group_music);
 
 instance_deactivate_object(self);

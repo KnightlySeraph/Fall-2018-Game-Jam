@@ -57,8 +57,8 @@ for(var i = 0; i < menu_items; i++)
 	{
 		if(menu_cursor != 3)
 		{
-			if(game_volume > 0){ col = c_silver; draw_set_color(col); }
-			else if(game_volume <= 0){ col = c_gray; draw_set_color(col); }
+			if(music_volume > 0){ col = c_silver; draw_set_color(col); }
+			else if(music_volume <= 0){ col = c_gray; draw_set_color(col); }
 		}
 		xx = menu_x + 100;
 		yy = menu_y - (menu_itemheight * 1.5);
@@ -68,8 +68,8 @@ for(var i = 0; i < menu_items; i++)
 	{
 		if(menu_cursor != 4)
 		{
-			if(game_volume <= 0){ col = c_silver; draw_set_color(col); }
-			else if(game_volume > 0){ col = c_gray; draw_set_color(col); }
+			if(music_volume <= 0){ col = c_silver; draw_set_color(col); }
+			else if(music_volume > 0){ col = c_gray; draw_set_color(col); }
 		}
 		xx = menu_x + 200;
 		yy = menu_y - (menu_itemheight * 1.5);

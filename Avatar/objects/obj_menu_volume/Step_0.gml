@@ -58,7 +58,6 @@ if(menu_control)
 			if(mouse_check_button(mb_left))
 			{
 				game_height = mouse_y_gui;
-				game_volume = ((menu_y - menu_itemheight * 1.5 * 3) - game_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 			}
 		}
 		else if(mouse_x_gui <= menu_x + 200) && (mouse_x_gui >= menu_x + 100)
@@ -66,7 +65,6 @@ if(menu_control)
 			if(mouse_check_button(mb_left))
 			{
 				music_height = mouse_y_gui;
-				music_volume = ((menu_y - menu_itemheight * 1.5 * 3) - music_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 			}
 		}
 	}
@@ -87,11 +85,27 @@ if(menu_committed != -1)
 			global.pausestep -= 1;
 			break;
 		case 1:
-			show_debug_message("These buttons don't work.");
+			if(game_volume <= 0)
+			{
+				game_height = gam_vol_b4off;
+			}
 			menu_committed = -1;
 			break;
 		case 2:
-			show_debug_message("These buttons don't work.");
+			gam_vol_b4off = game_height;
+			game_height = menu_y - menu_itemheight * 1.5 * 3;
+			menu_committed = -1;
+			break;
+		case 3:
+			if(music_volume <= 0)
+			{
+				music_height = mus_vol_b4off;
+			}
+			menu_committed = -1;
+			break;
+		case 4:
+			mus_vol_b4off = music_height;
+			music_height = menu_y - menu_itemheight * 1.5 * 3;
 			menu_committed = -1;
 			break;
 		default:
@@ -100,3 +114,10 @@ if(menu_committed != -1)
 			break;
 	}
 }
+
+game_volume = ((menu_y - menu_itemheight * 1.5 * 3) - game_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
+music_volume = ((menu_y - menu_itemheight * 1.5 * 3) - music_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
+global.vol_gam = game_volume;
+global.vol_mus = music_volume;
+audio_group_set_gain(snd_group_effects, global.vol_gam, 0);
+audio_group_set_gain(snd_group_music, global.vol_mus, 0);

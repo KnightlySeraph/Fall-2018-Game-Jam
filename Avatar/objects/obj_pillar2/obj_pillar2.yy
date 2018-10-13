@@ -1,8 +1,8 @@
 {
-    "id": "a1a2c574-86ac-4aff-b8a3-29f32bef77ab",
+    "id": "007c7e47-fdac-431c-8acb-427107800e86",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_groundTile2",
+    "name": "obj_pillar2",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "291004e3-0def-4130-bc9a-e7c5f0d5a0b3",
+    "spriteId": "b054b65f-4ada-40d6-a716-34e47a744eb8",
     "visible": true
 }

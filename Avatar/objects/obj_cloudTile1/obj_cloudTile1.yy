@@ -1,5 +1,5 @@
 {
-    "id": "818bc0b7-775c-4bef-b721-c841d52e8fd6",
+    "id": "3980735e-72c5-4dae-b4c0-4bf3355b009e",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_cloudTile1",
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "535b86e6-2784-4f76-99fd-f3eea1065122",
+    "spriteId": "da04fbac-f426-4baa-9495-14a038bfa4cf",
     "visible": true
 }

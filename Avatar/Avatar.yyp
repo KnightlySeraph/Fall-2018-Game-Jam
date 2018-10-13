@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "007c7e47-fdac-431c-8acb-427107800e86",
+            "Value": {
+                "id": "1ddf75e8-ce02-4e09-95d2-01267e59a533",
+                "resourcePath": "objects\\obj_pillar2\\obj_pillar2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "048020dc-359e-41e2-bba6-60b0084ee585",
             "Value": {
                 "id": "5f449fb0-35b2-485c-b3b2-ddbe60adbe2f",
@@ -71,6 +79,14 @@
             }
         },
         {
+            "Key": "1f6c3160-d713-46a1-b345-5d9fa9b0ade2",
+            "Value": {
+                "id": "1985c5a0-2d66-4fb9-82dd-d6df5edfe4ae",
+                "resourcePath": "objects\\obj_Pillar1\\obj_Pillar1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "207a9549-7c15-47b1-a13f-465cd951fb05",
             "Value": {
                 "id": "25e32509-5e22-428b-b517-4f3479ddeed1",
@@ -100,6 +116,14 @@
                 "id": "c8663c8d-430b-451c-9742-c853cf0448d4",
                 "resourcePath": "views\\2e1c916d-be55-44c3-b889-f991cec86851.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3980735e-72c5-4dae-b4c0-4bf3355b009e",
+            "Value": {
+                "id": "b3e9be63-4486-4b31-9321-30aa38a966db",
+                "resourcePath": "objects\\obj_cloudTile1\\obj_cloudTile1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -260,6 +284,14 @@
                 "id": "8fdcd655-3971-4a1b-ab4c-5ecf91a711a1",
                 "resourcePath": "views\\9fc0395e-5f2d-4057-8980-3dbb7c326b55.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a1a2c574-86ac-4aff-b8a3-29f32bef77ab",
+            "Value": {
+                "id": "8a3bb39a-e041-4ade-b0e6-706672e8a866",
+                "resourcePath": "objects\\obj_groundTile2\\obj_groundTile2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -476,6 +508,14 @@
                 "id": "fa6da15b-69f5-4643-9ff2-b350c29bcd38",
                 "resourcePath": "views\\fe3d552a-3ee4-4f4d-80bb-30d0892e0414.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ff8365b6-a6a7-4175-9eb9-ceeafbbb907e",
+            "Value": {
+                "id": "e15a6fec-f2e5-40b0-906e-af05bbe40e83",
+                "resourcePath": "objects\\obj_groundTile1\\obj_groundTile1.yy",
+                "resourceType": "GMObject"
             }
         }
     ],

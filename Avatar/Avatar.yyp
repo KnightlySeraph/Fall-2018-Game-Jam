@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0071ceb8-292a-46e9-ac93-a7450f69a4d0",
+            "Value": {
+                "id": "dc95fe4d-89c1-4467-8291-f67644235be1",
+                "resourcePath": "views\\0071ceb8-292a-46e9-ac93-a7450f69a4d0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "048020dc-359e-41e2-bba6-60b0084ee585",
             "Value": {
                 "id": "5f449fb0-35b2-485c-b3b2-ddbe60adbe2f",
@@ -59,6 +67,14 @@
             "Value": {
                 "id": "583b9ed3-1ef7-40cd-b400-67eb52767c31",
                 "resourcePath": "views\\1e0d4fef-787f-45d8-aa8f-eaee4caa00b0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "207a9549-7c15-47b1-a13f-465cd951fb05",
+            "Value": {
+                "id": "25e32509-5e22-428b-b517-4f3479ddeed1",
+                "resourcePath": "views\\207a9549-7c15-47b1-a13f-465cd951fb05.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -92,6 +108,14 @@
                 "id": "9602dd50-feb6-4bfa-bcda-d08626fee3cf",
                 "resourcePath": "objects\\obj_menu_main\\obj_menu_main.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "52906b92-ebb7-439b-a7b9-efd86e80a124",
+            "Value": {
+                "id": "b124e581-949d-4b05-9e55-b2469e446e0f",
+                "resourcePath": "sprites\\spr_frog_sad\\spr_frog_sad.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -255,6 +279,14 @@
             }
         },
         {
+            "Key": "b8904ee4-3fb1-4aa2-aaf8-05f14c32baa0",
+            "Value": {
+                "id": "8753e937-02b5-43e4-bc4c-7b5f206927a2",
+                "resourcePath": "views\\b8904ee4-3fb1-4aa2-aaf8-05f14c32baa0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b8fa9977-4319-4daf-90dc-2d49a09e86f0",
             "Value": {
                 "id": "f96a554e-7767-4a02-97ec-4ba0e59a2624",
@@ -275,6 +307,14 @@
             "Value": {
                 "id": "91d6d2b0-1ac1-4504-86e8-24bd735eb737",
                 "resourcePath": "objects\\obj_pause_test\\obj_pause_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c91f2c96-4d32-47bc-b1a6-01b1c3c7a5b1",
+            "Value": {
+                "id": "10a03b34-b5e6-4c63-9a12-33e3c6353619",
+                "resourcePath": "objects\\obj_frog_sad\\obj_frog_sad.yy",
                 "resourceType": "GMObject"
             }
         },

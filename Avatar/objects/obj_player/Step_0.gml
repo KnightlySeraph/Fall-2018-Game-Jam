@@ -32,7 +32,7 @@ hsp = ((leftright * movespd) + temphsp);
 if(abs(hsp) > templimit) 
 {
 	hsp = sign(hsp) * templimit;
-	temphsp -= 0.25 * sign(temphsp);
+	temphsp -= 0.5 * sign(temphsp);
 	
 }
 //VSP is equal to the speed plus the temp vsp
@@ -41,17 +41,17 @@ vsp = ((updown * flyspd) + tempvsp);
 if(abs(vsp) > templimit) 
 {
 	vsp = sign(vsp) * templimit;
-	tempvsp -= 0.25 * sign(tempvsp);
+	tempvsp -= 0.5 * sign(tempvsp);
 }
 
 //Decrease temp vsp and hsp if not 0
 if(tempvsp != 0)
 {
-	tempvsp -= 0.25 * sign(tempvsp);	
+	tempvsp -= 0.5 * sign(tempvsp);	
 }
 if(temphsp != 0)
 {
-	temphsp -= 0.25 * sign(temphsp);	
+	temphsp -= 0.5 * sign(temphsp);	
 }
 
 //Check if colliding with walls on left or right
@@ -62,9 +62,9 @@ if(place_meeting(x+hsp, y, obj_wall))
 		x += sign(hsp);	
 	}
 	//If moving left or right, big bounce
-	if(leftright != 0) temphsp = 22 * -sign(hsp);
+	if(leftright != 0) temphsp = bigbounce * -sign(hsp);
 	//Else, small bounce
-	else temphsp = 12 * -sign(hsp);
+	else temphsp = smallbounce * -sign(hsp);
 
 	hsp = 0;
 }
@@ -76,9 +76,9 @@ if(place_meeting(x, y + vsp, obj_wall))
 		y += sign(vsp);	
 	}
 	//IF moving up or down, big bounce
-	if(updown != 0) tempvsp = 22 * -sign(vsp);
+	if(updown != 0) tempvsp = bigbounce * -sign(vsp);
 	//Else, small bounce
-	else tempvsp = 12 * -sign(vsp);
+	else tempvsp = smallbounce * -sign(vsp);
 
 	vsp = 0;
 }

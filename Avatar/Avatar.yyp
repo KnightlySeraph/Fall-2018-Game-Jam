@@ -255,11 +255,27 @@
             }
         },
         {
+            "Key": "828e4ad3-0d71-4c2f-9e73-cbff5ca2208d",
+            "Value": {
+                "id": "d683e618-490d-4f90-baeb-46f923a215cb",
+                "resourcePath": "sprites\\spr_groundTile1Halved\\spr_groundTile1Halved.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85473d81-ce8d-43aa-b3b2-aa2573688351",
             "Value": {
                 "id": "11e367aa-4357-4797-9a3f-f2a938b24fd5",
                 "resourcePath": "views\\85473d81-ce8d-43aa-b3b2-aa2573688351.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8859f691-6651-4558-b61c-82e749c4994b",
+            "Value": {
+                "id": "a6137256-6c52-4a7c-9f12-144e26ab309c",
+                "resourcePath": "sprites\\spr_groundTile2Halved\\spr_groundTile2Halved.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

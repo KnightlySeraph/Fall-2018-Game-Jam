@@ -1,3 +1,4 @@
 draw_self();
-draw_text(x,y,round(temphsp));
-draw_text(x,y+10,round(hsp));
+draw_text(room_width/2,room_height/2,round(tempvsp));
+draw_text(room_width/2,room_height/2+10,round(vsp));
+draw_text(room_width/2,room_height/2+20,(round(tempvsp) == round(vsp)));

@@ -55,6 +55,22 @@
             }
         },
         {
+            "Key": "089cbb96-c114-44c4-9769-ccf5f89625e0",
+            "Value": {
+                "id": "0c7c05e2-cfaf-4da1-9230-f2d0d821a7f6",
+                "resourcePath": "sprites\\spr_wallTile1\\spr_wallTile1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0bcbfe39-7590-4c50-aea1-727d0ec5813d",
+            "Value": {
+                "id": "38e2ed2e-cae2-40e2-b783-8600ef25f47e",
+                "resourcePath": "objects\\obj_pinwheel\\obj_pinwheel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0f4d867c-1f45-41b5-a678-3889f8e9ca30",
             "Value": {
                 "id": "54d4e04c-c8e5-483f-9b82-d69fc0d8556f",
@@ -143,6 +159,14 @@
             }
         },
         {
+            "Key": "3a5f3a23-c194-4bea-8d65-75c9159e8a20",
+            "Value": {
+                "id": "0284de76-0913-447b-9624-180822ab8618",
+                "resourcePath": "sprites\\spr_player_move\\spr_player_move.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ee17459-2891-4636-9d7c-c5c490e3fae9",
             "Value": {
                 "id": "107efcf4-857a-4cfb-96a6-f17e31af000f",
@@ -164,6 +188,14 @@
                 "id": "07d70756-2638-4b43-b92f-7e611d3a92fa",
                 "resourcePath": "views\\46118358-bb78-478d-8168-18c8a0327704.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "47764414-f1c3-4a8b-b80b-80aa77565a82",
+            "Value": {
+                "id": "ace1d382-f0c6-4512-8877-682ca98abecc",
+                "resourcePath": "objects\\obj_wallTile1\\obj_wallTile1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -284,6 +316,14 @@
                 "id": "a50d33fc-ba4d-4307-b14c-478d6eaba629",
                 "resourcePath": "objects\\obj_flag\\obj_flag.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "854573eb-3bd7-435f-9902-eba4dc9fb0ae",
+            "Value": {
+                "id": "66aa723c-9559-4326-9108-a003888136a6",
+                "resourcePath": "sprites\\spr_pinwheel\\spr_pinwheel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

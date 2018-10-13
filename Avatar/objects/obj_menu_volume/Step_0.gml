@@ -53,7 +53,20 @@ if(menu_control)
 	}
 	else if(mouse_y_gui <= menu_y - menu_itemheight * 1.5 * 3) && (mouse_y_gui >= menu_y - menu_itemheight * 1.5 * 13)
 	{
-		
+		if(mouse_x_gui <= menu_x - 100) && (mouse_x_gui >= menu_x - 200)
+		{
+			if(mouse_check_button(mb_left))
+			{
+				game_height = mouse_y_gui;
+			}
+		}
+		else if(mouse_x_gui <= menu_x + 200) && (mouse_x_gui >= menu_x + 100)
+		{
+			if(mouse_check_button(mb_left))
+			{
+				music_height = mouse_y_gui;
+			}
+		}
 	}
 }
 

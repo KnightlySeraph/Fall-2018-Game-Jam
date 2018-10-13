@@ -7,6 +7,8 @@
 //To move to the left set RightFacingInput to true
 //Turn off either variable to slowly return the platform to the original position
 
+puzzle_num = 0;  //Must have same value as coorespponding pinwheel
+
 //WARNINGS
 //Do not make both LeftFacing and RightFacing true at the same time, untested
 
@@ -24,3 +26,4 @@ momentum = 0.3;	//Rate of speed increaded
 termialSpeed = 10; //Maximum allowed speed
 allowLeft = false; //Allow left movement, used in step
 allowRight = true; //Allow right movement, used in step
+

@@ -158,6 +158,10 @@ if(shooting)
 {
 	sprite_index = spr_player_shoot;	
 }
+else if(leftright != 0)
+{
+	sprite_index = spr_player_move;	
+}
 else
 {
 	sprite_index = spr_player_idle;	

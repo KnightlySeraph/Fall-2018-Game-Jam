@@ -5,42 +5,42 @@ if(keyboard_check(ord("W")))
 {
 	//Move Up
 	updown -= 1;
-	if(tempvsp > -15) tempvsp -= 1;
+	if(tempvsp > -templimit) tempvsp -= 1;
 }
 if(keyboard_check(ord("A"))) 
 {
 	//Move Left
 	leftright -= 1; 
-	if(temphsp > -15) temphsp -= 1;
+	if(temphsp > -templimit) temphsp -= 1;
 }
 if(keyboard_check(ord("S")))
 {
 	//Move Down
 	updown += 1; 
-	if(tempvsp < 15) tempvsp += 1;
+	if(tempvsp < templimit) tempvsp += 2;
 }
 if(keyboard_check(ord("D"))) 
 {
 	//Move Right
 	leftright += 1; 
-	if(temphsp < 15) temphsp += 1;
+	if(temphsp < templimit) temphsp += 1;
 }
 
 //HSP is equal to the speed plus the temp hsp
 hsp = ((leftright * movespd) + temphsp);
 //If hsp is more than 15, make it 15 and decrease temp hsp
-if(abs(hsp) > 15) 
+if(abs(hsp) > templimit) 
 {
-	hsp = sign(hsp) * 15;
+	hsp = sign(hsp) * templimit;
 	temphsp -= 0.25 * sign(temphsp);
 	
 }
 //VSP is equal to the speed plus the temp vsp
 vsp = ((updown * flyspd) + tempvsp);
 //If vsp is more than 15, make it 15 and decrease temp vsp
-if(abs(vsp) > 15) 
+if(abs(vsp) > templimit) 
 {
-	vsp = sign(vsp) * 15;
+	vsp = sign(vsp) * templimit;
 	tempvsp -= 0.25 * sign(tempvsp);
 }
 
@@ -62,9 +62,9 @@ if(place_meeting(x+hsp, y, obj_wall))
 		x += sign(hsp);	
 	}
 	//If moving left or right, big bounce
-	if(leftright != 0) temphsp = 17 * -sign(hsp);
+	if(leftright != 0) temphsp = 22 * -sign(hsp);
 	//Else, small bounce
-	else temphsp = 6 * -sign(hsp);
+	else temphsp = 12 * -sign(hsp);
 
 	hsp = 0;
 }
@@ -76,9 +76,9 @@ if(place_meeting(x, y + vsp, obj_wall))
 		y += sign(vsp);	
 	}
 	//IF moving up or down, big bounce
-	if(updown != 0) tempvsp = 17 * -sign(vsp);
+	if(updown != 0) tempvsp = 22 * -sign(vsp);
 	//Else, small bounce
-	else tempvsp = 6 * -sign(vsp);
+	else tempvsp = 12 * -sign(vsp);
 
 	vsp = 0;
 }
@@ -86,4 +86,14 @@ if(place_meeting(x, y + vsp, obj_wall))
 //Move player
 x += hsp;
 y += vsp;
+
+//Sprite Machine
+if(leftright > 0)
+{
+	image_xscale = 1;	
+}
+else if(leftright < 0)
+{
+	image_xscale = -1;	
+}
 

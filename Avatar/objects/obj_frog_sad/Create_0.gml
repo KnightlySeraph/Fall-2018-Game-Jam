@@ -19,3 +19,5 @@ player_y = obj_player.y;
 
 original_x = x;
 original_y = y;
+
+attack = true;

@@ -83,6 +83,14 @@ switch(state)
 		break;
 }
 
+if(attack)
+{
+	if((player_y + 20 > y && player_y - 20 < y) || collision_line(x,y,original_x,player_y,obj_wall,false,false))
+	{
+		
+	}
+}
+
 
 if(place_meeting(x,y,obj_wind))
 {

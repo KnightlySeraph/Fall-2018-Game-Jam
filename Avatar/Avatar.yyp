@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "13740fe0-2f55-48ca-bbfc-63c6839fb953",
+            "Value": {
+                "id": "84b97854-d993-467f-8c69-ba61f0631737",
+                "resourcePath": "objects\\obj_wallTile1\\obj_wallTile1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d560a0-6de6-443a-a7f2-626bc2018b08",
             "Value": {
                 "id": "21a24f29-216b-4c77-88cc-4c76cc0da99b",

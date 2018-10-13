@@ -16,7 +16,7 @@ var yy;
 for(var i = 0; i < menu_items; i++)
 {
 	var txt = menu[i];
-	if(menu_cursor == i)
+		if(menu_cursor == i)
 	{
 		col = c_silver;
 	}
@@ -27,30 +27,50 @@ for(var i = 0; i < menu_items; i++)
 	draw_set_color(col);
 	if(i == 0)
 	{
-	xx = menu_x;
-	yy = menu_y;
-	draw_text(xx,yy,txt);
+		xx = menu_x;
+		yy = menu_y;
+		draw_text(xx,yy,txt);
 	}
 	else if(i == 1)
 	{
+		if(menu_cursor != 1)
+		{
+			if(game_volume > 0){ col = c_silver; draw_set_color(col); }
+			else if(game_volume <= 0){ col = c_gray; draw_set_color(col); }
+		}
 		xx = menu_x - 200;
 		yy = menu_y - (menu_itemheight * 1.5);
 		draw_text(xx,yy,txt);
 	}
 	else if(i == 2)
 	{
+		if(menu_cursor != 2)
+		{
+			if(game_volume <= 0){ col = c_silver; draw_set_color(col); }
+			else if(game_volume > 0){ col = c_gray; draw_set_color(col); }
+		}
 		xx = menu_x - 100;
 		yy = menu_y - (menu_itemheight * 1.5);
 		draw_text(xx,yy,txt);
 	}
 	else if(i == 3)
 	{
+		if(menu_cursor != 3)
+		{
+			if(game_volume > 0){ col = c_silver; draw_set_color(col); }
+			else if(game_volume <= 0){ col = c_gray; draw_set_color(col); }
+		}
 		xx = menu_x + 100;
 		yy = menu_y - (menu_itemheight * 1.5);
 		draw_text(xx,yy,txt);
 	}
 	else if(i == 4)
 	{
+		if(menu_cursor != 4)
+		{
+			if(game_volume <= 0){ col = c_silver; draw_set_color(col); }
+			else if(game_volume > 0){ col = c_gray; draw_set_color(col); }
+		}
 		xx = menu_x + 200;
 		yy = menu_y - (menu_itemheight * 1.5);
 		draw_text(xx,yy,txt);

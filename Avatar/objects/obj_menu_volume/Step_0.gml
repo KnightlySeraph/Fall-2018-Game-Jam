@@ -58,6 +58,7 @@ if(menu_control)
 			if(mouse_check_button(mb_left))
 			{
 				game_height = mouse_y_gui;
+				game_volume = ((menu_y - menu_itemheight * 1.5 * 3) - game_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 			}
 		}
 		else if(mouse_x_gui <= menu_x + 200) && (mouse_x_gui >= menu_x + 100)
@@ -65,8 +66,13 @@ if(menu_control)
 			if(mouse_check_button(mb_left))
 			{
 				music_height = mouse_y_gui;
+				music_volume = ((menu_y - menu_itemheight * 1.5 * 3) - music_height)/((menu_y - menu_itemheight * 1.5 * 3) - (menu_y - menu_itemheight * 1.5 * 13));
 			}
 		}
+	}
+	else if(mouse_y_gui < menu_y - menu_itemheight * 1.5 * 2) || (mouse_y_gui > menu_y)
+	{
+		menu_cursor = -1;
 	}
 }
 

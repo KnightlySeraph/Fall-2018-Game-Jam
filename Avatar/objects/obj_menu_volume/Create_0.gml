@@ -19,8 +19,8 @@ menu[1] = "On";
 menu[0] = "Back";
 
 label[2] = "Volume";
-label[1] = "Game";
-label[0] = "Music";
+label[1] = "Music";
+label[0] = "Game";
 
 label_items = array_length_1d(label);
 menu_items = array_length_1d(menu);

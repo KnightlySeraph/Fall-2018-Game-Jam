@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "25479a7b-2eba-4919-8b38-3bf008bbf655",
+            "Value": {
+                "id": "e5270d97-947e-4db4-a7a0-c06b9da10d9c",
+                "resourcePath": "sprites\\spr_enlargedCol\\spr_enlargedCol.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "25ab997b-6530-4282-b9f3-15b988096f2f",
             "Value": {
                 "id": "8eda6bdf-dba4-4ed6-b9c5-e71c501a14d6",
@@ -492,6 +500,14 @@
                 "id": "8f7a7ff9-aa47-45f2-979c-436f7636243e",
                 "resourcePath": "objects\\obj_menu_options\\obj_menu_options.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c4d5f22a-fe77-4fc9-937e-5ddd65b9fd60",
+            "Value": {
+                "id": "d4d552cb-958a-4902-81e7-b7fc311dddf0",
+                "resourcePath": "sprites\\spr_flag_of_the_frog_people\\spr_flag_of_the_frog_people.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

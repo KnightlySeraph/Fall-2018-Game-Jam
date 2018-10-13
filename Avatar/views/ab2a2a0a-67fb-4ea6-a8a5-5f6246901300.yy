@@ -12,7 +12,9 @@
         "eda0b529-7b67-4904-93be-d5094347aa49",
         "b054b65f-4ada-40d6-a716-34e47a744eb8",
         "dc782942-8499-40d7-95de-f4a45fbf1c4b",
-        "9b152761-ce44-4a1b-b04b-e83b6b52ddcc"
+        "9b152761-ce44-4a1b-b04b-e83b6b52ddcc",
+        "25479a7b-2eba-4919-8b38-3bf008bbf655",
+        "c4d5f22a-fe77-4fc9-937e-5ddd65b9fd60"
     ],
     "filterType": "GMSprite",
     "folderName": "Environment Sprites",

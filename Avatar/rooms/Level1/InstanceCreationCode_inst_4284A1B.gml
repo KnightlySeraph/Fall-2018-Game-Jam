@@ -1,1 +1,1 @@
-range = range * 2;
+puzzle_num = 1;

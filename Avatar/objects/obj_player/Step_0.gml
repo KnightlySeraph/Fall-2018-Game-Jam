@@ -156,14 +156,39 @@ else if(leftright < 0)
 
 if(shooting)
 {
-	sprite_index = spr_player_shoot;	
-}
-else if(leftright != 0)
-{
-	sprite_index = spr_player_move;	
+	if(leftright != 0)
+	{
+		sprite_index = spr_player_shoot_move;
+	}
+	else if(updown < 0)
+	{
+		sprite_index = spr_player_shoot_up;	
+	}
+	else if(updown > 0)
+	{
+		sprite_index = spr_player_shoot_down;	
+	}
+	else
+	{
+		sprite_index = spr_player_shoot;	
+	}
 }
 else
 {
-	sprite_index = spr_player_idle;	
+	if(leftright != 0)
+	{
+		sprite_index = spr_player_move;
+	}
+	else if(updown < 0)
+	{
+		sprite_index = spr_player_move_up;	
+	}
+	else if(updown > 0)
+	{
+		sprite_index = spr_player_move_down;	
+	}
+	else
+	{
+		sprite_index = spr_player_idle;	
+	}
 }
-

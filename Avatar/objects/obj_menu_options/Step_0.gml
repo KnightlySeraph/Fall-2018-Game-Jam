@@ -34,33 +34,28 @@ if(menu_committed != -1)
 	switch(menu_committed)
 	{
 		case 0: 
-			game_end();
+			instance_activate_object(obj_menu_pause);
+			instance_deactivate_object(self);
+			menu_committed = -1;
+			global.pausestep -= 1;
 			break;
 		case 1:
-			instance_activate_object(obj_menu_options);
+			instance_activate_object(obj_menu_screen);
 			instance_deactivate_object(self);
 			menu_committed = -1;
 			global.pausestep += 1;
 			break;
 		case 2:
-			room_goto(rm_menu_main);
-			global.pause = false;
-			menu_committed = -1;
-			break;
-		case 3:
-			room_restart();
-			global.pause = false;
-			menu_committed = -1;
-			break;
-		case 4:
-			show_debug_message("These buttons don't work.");
-			menu_committed = -1;
-			break;
-		case 5:
-			global.pause = false;
-			instance_activate_all();
+			instance_activate_object(obj_menu_brightness);
 			instance_deactivate_object(self);
 			menu_committed = -1;
+			global.pausestep += 1;
+			break;
+		case 3:
+			instance_activate_object(obj_menu_volume);
+			instance_deactivate_object(self);
+			menu_committed = -1;
+			global.pausestep += 1;
 			break;
 		default:
 			show_debug_message("These buttons don't work.");

@@ -1,5 +1,5 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Options Menu GUI
+
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 
@@ -12,12 +12,10 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[5] = "Resume";
-menu[4] = "Restart Last Checkpoint";
-menu[3] = "Restart Level";
-menu[2] = "Main Menu";
-menu[1] = "Options";
-menu[0] = "Quit";
+menu[3] = "Volume";
+menu[2] = "Brightness";
+menu[1] = "Fullscreen";
+menu[0] = "Back";
 
 menu_items = array_length_1d(menu);
 

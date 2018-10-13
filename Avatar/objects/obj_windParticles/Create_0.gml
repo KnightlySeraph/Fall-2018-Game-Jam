@@ -1,6 +1,5 @@
 /// @description Particle System
-x = room_width / 2;
-y = room_height / 2;
+
 //Setup the Particles System
 part_system = part_system_create();
 

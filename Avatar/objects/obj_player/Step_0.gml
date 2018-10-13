@@ -127,6 +127,6 @@ if(shooting)
 }
 else
 {
-	sprite_index = spr_player_test;	
+	sprite_index = spr_player_idle;	
 }
 

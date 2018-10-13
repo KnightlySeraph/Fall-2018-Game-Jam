@@ -12,8 +12,10 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[2] = "Game Volume";
-menu[1] = "Music Volume";
+menu[4] = "Off";
+menu[3] = "On";
+menu[2] = "Off";
+menu[1] = "On";
 menu[0] = "Back";
 
 menu_items = array_length_1d(menu);
@@ -21,5 +23,8 @@ menu_items = array_length_1d(menu);
 menu_cursor = 4;
 
 menu_top = menu_y - menu_itemheight * 1.5 * menu_items;
+
+game_volume = global.snd_vol;
+music_volume = global.snd_mus;
 
 instance_deactivate_object(self);

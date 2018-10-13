@@ -7,7 +7,7 @@
 //User Variables
 vectorViewSizeFactor = 4;
 follow = obj_player;
-lerpRate = 50;
+lerpRate = 15;
 
 
 //Do not touch stuff

@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0cc2fb76-ec30-4d57-b840-82d2d55e300e",
+            "Value": {
+                "id": "9ca96272-cf97-4122-8e06-d214c5b5bdb2",
+                "resourcePath": "sprites\\spr_wallTile1\\spr_wallTile1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f4d867c-1f45-41b5-a678-3889f8e9ca30",
             "Value": {
                 "id": "54d4e04c-c8e5-483f-9b82-d69fc0d8556f",

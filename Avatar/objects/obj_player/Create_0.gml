@@ -1,6 +1,9 @@
 hsp = 0;
 vsp = 0;
 
+temphsp = 0;
+tempvsp = 0;
+
 flyspd = 6;
 movespd = 8;
 

@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0083c981-95e5-425e-ab51-043aa2b41cd1",
+            "Value": {
+                "id": "3e0bf50a-3316-429a-9c7a-db6f63030930",
+                "resourcePath": "sprites\\spr_player_wind_juice\\spr_player_wind_juice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "048020dc-359e-41e2-bba6-60b0084ee585",
             "Value": {
                 "id": "5f449fb0-35b2-485c-b3b2-ddbe60adbe2f",
@@ -356,6 +364,14 @@
                 "id": "c1ea9050-4105-4094-922c-4516ca98402f",
                 "resourcePath": "sprites\\spr_frog_big\\spr_frog_big.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "67a62814-bf7c-4980-ab30-31dadca88be5",
+            "Value": {
+                "id": "15ddf07e-cba5-4389-834e-d61a3c3f1d5d",
+                "resourcePath": "objects\\obj_player_wind_juice\\obj_player_wind_juice.yy",
+                "resourceType": "GMObject"
             }
         },
         {

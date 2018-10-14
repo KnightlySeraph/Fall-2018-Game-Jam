@@ -3,20 +3,20 @@
 gui_width = display_get_gui_width();
 gui_height = display_get_gui_height();
 
-menu_x = gui_width - 512;
-menu_y = gui_height - 384;
+menu_itemheight = 96;
+menu_itemlength = 96;
+menu_x = gui_width/2 - menu_itemlength;
+menu_y = gui_height - 2 * menu_itemheight;
 
-//menu_speed = 25;
-menu_font = fMenu;
-menu_itemheight = font_get_size(fMenu);
+
 menu_committed = -1;
 menu_control = true;
 
-menu[4] = "New Game";
-menu[3] = "Continue";
-menu[2] = "Credits";
-menu[1] = "Options";
-menu[0] = "Quit";
+menu[4] = spr_new;
+menu[3] = spr_cont;
+menu[2] = spr_cred;
+menu[1] = spr_opt;
+menu[0] = spr_quit;
 
 menu_items = array_length_1d(menu);
 

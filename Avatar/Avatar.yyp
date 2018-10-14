@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0c210449-2f4a-49f6-9210-562ea8d3a904",
+            "Value": {
+                "id": "16a321af-bb64-4dd1-9c10-442c0abb0901",
+                "resourcePath": "objects\\obj_cloudTile1V2\\obj_cloudTile1V2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0d71c47c-18dc-4b24-8115-b2c8132a97e9",
             "Value": {
                 "id": "f56f0e41-d634-4afe-a44b-bc15134add86",
@@ -235,6 +243,14 @@
             "Value": {
                 "id": "b86afa95-5922-4aad-b60a-d055429be176",
                 "resourcePath": "objects\\obj_storm\\obj_storm.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "34ab7db3-e76e-4817-ad6b-cc2ba3a70d33",
+            "Value": {
+                "id": "1762ca53-754f-4964-a573-7c5a13de290f",
+                "resourcePath": "objects\\obj_cloudTile3\\obj_cloudTile3.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "e4ee433a-2b33-4677-8339-76c327e04e2d",
+            "Value": {
+                "id": "a4e289d8-09f9-4ff9-b411-44129c5de3c6",
+                "resourcePath": "objects\\obj_cloudTile2\\obj_cloudTile2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e516cdd4-507e-4bcb-b4d0-b2f37075e6b9",
             "Value": {
                 "id": "87dc7692-b006-4100-98d4-e4902fb9b31a",
@@ -1012,6 +1036,14 @@
                 "id": "fa6da15b-69f5-4643-9ff2-b350c29bcd38",
                 "resourcePath": "views\\fe3d552a-3ee4-4f4d-80bb-30d0892e0414.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fec81e79-7b0d-4e41-8658-f46b536ec34f",
+            "Value": {
+                "id": "4562f907-8a7e-49e2-98a8-dbe6ed4b4c51",
+                "resourcePath": "objects\\obj_cloudTile4\\obj_cloudTile4.yy",
+                "resourceType": "GMObject"
             }
         },
         {

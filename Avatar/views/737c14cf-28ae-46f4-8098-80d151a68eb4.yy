@@ -14,7 +14,11 @@
         "84334c88-b3b3-48d2-af27-cab6af1bda60",
         "aac21c90-38d4-4912-8ff2-3f1b185692a6",
         "47764414-f1c3-4a8b-b80b-80aa77565a82",
-        "31428234-e0cf-4ccd-b717-5ba957818364"
+        "31428234-e0cf-4ccd-b717-5ba957818364",
+        "0c210449-2f4a-49f6-9210-562ea8d3a904",
+        "e4ee433a-2b33-4677-8339-76c327e04e2d",
+        "34ab7db3-e76e-4817-ad6b-cc2ba3a70d33",
+        "fec81e79-7b0d-4e41-8658-f46b536ec34f"
     ],
     "filterType": "GMObject",
     "folderName": "Environment Objects",

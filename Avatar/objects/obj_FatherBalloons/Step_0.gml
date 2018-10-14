@@ -41,7 +41,7 @@ if(!lockAnim){
 }
 
 if(balloonHealth <= 0){
-	obj_FrogFather.frogFatherHealth  -= 20;
+	//obj_FrogFather.frogFatherHealth  -= 20;
 	
 	sprite_index = spr_blank;
 	

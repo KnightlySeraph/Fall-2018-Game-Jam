@@ -4,6 +4,10 @@ balloonObj1.x = x - 200;
 balloonObj1.y = y - 375;
 balloonObj2.x = x + 175;
 balloonObj2.y = y - 325;
+//If balloons have blank sprite kill the Father
+if (balloonObj1.sprite_index == spr_blank && balloonObj2.sprite_index  == spr_blank){
+	frogFatherHealth = 0;
+}
 //Constant Player Reference
 if (instance_exists(obj_player)){
 	pX = obj_player.x;
@@ -252,6 +256,7 @@ if (current_state == states[5]){
 if (current_state = states[6]){
 	//Perform the Death animation
 	sprite_index = spr_FatherDeath;
+	y += 5;
 	//Transition Logic goes here
 }
 

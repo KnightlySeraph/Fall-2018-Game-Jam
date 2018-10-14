@@ -20,5 +20,6 @@ if (sprite_index == spr_FatherGunAway){
 }
 
 if (sprite_index == spr_FatherTongue){
+	lockState = false;
 	createTongue = true;
 }

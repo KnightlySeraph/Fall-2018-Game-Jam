@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "59a8428a-c175-4e41-918d-184946bb1635",
+            "Value": {
+                "id": "291a2110-61af-46dc-8990-f54dfbc6e8e0",
+                "resourcePath": "objects\\obj_hearts\\obj_hearts.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "59cf6ee5-1df2-4653-b44d-6f64736865cf",
             "Value": {
                 "id": "c3ea1d9f-9478-4c1f-b64e-27143e2ea2cc",
@@ -548,6 +556,14 @@
                 "id": "15ddf07e-cba5-4389-834e-d61a3c3f1d5d",
                 "resourcePath": "objects\\obj_player_wind_juice\\obj_player_wind_juice.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "68930527-2702-410d-a8c7-73c06a706b2f",
+            "Value": {
+                "id": "867e630f-5579-4f2f-8e3f-7f62a9390bea",
+                "resourcePath": "sprites\\spr_hearts\\spr_hearts.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

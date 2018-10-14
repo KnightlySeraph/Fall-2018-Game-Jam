@@ -21,5 +21,9 @@ part_type_gravity(part, 0.2, 90);
 part_type_life(part, room_speed * 2, room_speed*4);
 part_type_blend(part, 0);
 
+part_emit = part_emitter_create(part_system);
+part_emitter_region(part_system, part_emit, x-80, x+80, y-80, y+80, ps_shape_rectangle, ps_distr_linear);
+part_emitter_stream(part_system, part_emit, part, 5);
+
 
 

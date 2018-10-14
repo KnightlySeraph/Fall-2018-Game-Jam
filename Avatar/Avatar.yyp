@@ -74,7 +74,7 @@
             "Key": "0d71c47c-18dc-4b24-8115-b2c8132a97e9",
             "Value": {
                 "id": "f56f0e41-d634-4afe-a44b-bc15134add86",
-                "resourcePath": "objects\\obj_windParticlesInteract\\obj_windParticlesInteract.yy",
+                "resourcePath": "objects\\obj_windParticles2\\obj_windParticles2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "884c35f1-e88c-4749-b416-1bdc31c1ee42",
+            "Value": {
+                "id": "21e09fb6-fbef-4f8c-a5d2-3805381a30a3",
+                "resourcePath": "views\\884c35f1-e88c-4749-b416-1bdc31c1ee42.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8859f691-6651-4558-b61c-82e749c4994b",
             "Value": {
                 "id": "a6137256-6c52-4a7c-9f12-144e26ab309c",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "c6939b03-d85f-43ac-8a9b-90ff9945d33a",
+            "Value": {
+                "id": "591fdc3c-3bd0-42fb-8774-9b0342122349",
+                "resourcePath": "sprites\\spr_smallCollision\\spr_smallCollision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6960c5a-d71f-461b-a33d-a0bf452d4a1c",
             "Value": {
                 "id": "c42a26dd-c477-4d2c-9f48-2267b85144e5",
@@ -740,6 +756,14 @@
                 "id": "50834bab-2514-43c4-a410-86d867fa1e2f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d03aa039-aac1-4c1d-95c6-5f7e9a16fc8e",
+            "Value": {
+                "id": "46b543dc-6081-4c20-b7c7-5aff31f2351d",
+                "resourcePath": "objects\\obj_destroyPlatform\\obj_destroyPlatform.yy",
+                "resourceType": "GMObject"
             }
         },
         {

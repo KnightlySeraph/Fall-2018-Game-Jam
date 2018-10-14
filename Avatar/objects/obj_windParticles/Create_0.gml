@@ -16,7 +16,7 @@ part_type_alpha2(part, 1, 0.75);
 part_type_speed(part, 0.1, 0.3, 0, 0);
 part_type_direction(part, 45, 115, 0, 1);
 part_type_gravity(part, 0.2, 90);
-part_type_life(part, room_speed * 2, room_speed*4);
+part_type_life(part, room_speed * 1, room_speed*2);
 part_type_blend(part, 0);
 
 

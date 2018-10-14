@@ -231,7 +231,7 @@ if (current_state == states[5]){
 	//Check transLock
 	if(lockState == false){
 		//Event has finished so start cooldown alarm
-		alarm[0] = vomitCooldown * room_speed;
+		alarm[2] = vomitCooldown * room_speed;
 		//Conider Death
 		if (frogFatherHealth <= 0 ){
 			current_state = states[6];	
@@ -251,7 +251,7 @@ if (current_state == states[5]){
 //Death Event
 if (current_state = states[6]){
 	//Perform the Death animation
-	
+	sprite_index = spr_FatherDeath;
 	//Transition Logic goes here
 }
 

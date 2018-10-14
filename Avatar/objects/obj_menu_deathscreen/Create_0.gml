@@ -19,7 +19,7 @@ menu[2] = "Main Menu";
 menu[1] = "Options";
 menu[0] = "Quit";
 
-label = "You Died";
+label = "";
 
 menu_items = array_length_1d(menu);
 

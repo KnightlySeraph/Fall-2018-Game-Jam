@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "0e213fad-f65b-4e9b-b59a-507917c77d10",
+            "Value": {
+                "id": "4f78b004-7982-4386-82c6-9d61de68114a",
+                "resourcePath": "sprites\\spr_FatherFireGun\\spr_FatherFireGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f4d867c-1f45-41b5-a678-3889f8e9ca30",
             "Value": {
                 "id": "54d4e04c-c8e5-483f-9b82-d69fc0d8556f",
@@ -412,6 +420,14 @@
                 "id": "e762869e-52e6-49ab-9ef0-e6919cc3dea0",
                 "resourcePath": "objects\\obj_movingPlatform\\obj_movingPlatform.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5c4c826a-bb02-48d1-a223-4b3dafdad3ec",
+            "Value": {
+                "id": "cdc3106e-f416-4bd0-8203-909c03540609",
+                "resourcePath": "sprites\\spr_FatherGunDraw\\spr_FatherGunDraw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1076,6 +1092,14 @@
                 "id": "cdc96649-31e4-4431-874e-6c2da1cc3faf",
                 "resourcePath": "sprites\\spr_pillarBottom\\spr_pillarBottom.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0c170d4-6c0a-437a-9566-3b0f14b7f3d6",
+            "Value": {
+                "id": "77732beb-6fa6-4d9a-b629-d8fe3bfe282a",
+                "resourcePath": "objects\\obj_FatherVomitParticle\\obj_FatherVomitParticle.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -1,4 +1,57 @@
 /// @description The Father's AI
+//Constant Player Reference
+if (instance_exists(obj_player)){
+	pX = obj_player.x;
+	pY = obj_player.y;
+}
+//Always Face Player
+if (instance_exists(obj_player)){
+	//If Father is to the right of the player
+	if (x > pX){
+		//Face Left
+		image_xscale = 1;
+		facingLeft = true;
+	}
+	//Implicitly locacted left of player
+	else{
+		image_xscale = -1;
+		facingRight = false;
+	}
+}
+
+//Set the player distance range
+dist = abs(x - pX);
+if (dist > 1200) { //Player is far away
+	longRange = true;
+	midRange = false;
+	shortRange = false;
+}
+else if (dist < 450) {
+	longRange = false;
+	midRange = false;
+	shortRange = true;
+}
+else { //Implicitly mid-range
+	longRange = false;
+	midRange = true;
+	shortRange = false;
+}
+
+//Debug Distance Key
+
+if (keyboard_check_pressed(ord("L"))) { 
+	show_debug_message("Player is " + string(dist)); 
+	//Log out cooldown bools
+	show_debug_message("Vomit on Cooldown: " + string(vomitOnCooldown) + "		Gun on Cooldown: " + string(gunOnCooldown) + "		Tongue on Cooldown: " + string(tongueOnCooldown));
+	//Log current State
+	show_debug_message("Current State is " + string(current_state));
+	//Log status of lockState
+	show_debug_message("lockState is: " + string(lockState));
+}
+
+//Distance Reference
+//450 and Below is close
+//1200 and above is far
 
 //Introduction Event
 if (current_state = states[0]){
@@ -6,25 +59,61 @@ if (current_state = states[0]){
 	
 	
 	//Transition Logic goes here
+	if (introEnded){
+		current_state = states[1];	
+	}
 }
 
 //Idle Event
 if (current_state = states[1]){
 	//Perform the Father's Idle
+	sprite_index = spr_FatherIdle;
 	
-	//Transition Logic goes here
+	//==============TRANSITION LOGIC===================
+	//Consider Death
+	if (frogFatherHealth <= 0){
+		//Transition to death animation
+		current_state = states[6];
+	}
+	//Consider Mid-Range Attack
+	else if (midRange && !tongueOnCooldown){
+		//Transition to tongue attack
+		current_state = states[3];
+	}
+	//Consider Vomiting
+	else if (shortRange && !vomitOnCooldown){
+		//Transition to vomit attack
+		current_state = states[5];	
+		//Lock the state machine till vomit event is finished
+		lockState = true;
+	}
+	//Consider Shooting
+	else if (longRange && !gunOnCooldown){
+		//Transition to gun attack
+		current_state = states[4];	
+	}
+	//Transition to Movement
+	else{
+		current_state = states[2];	
+	}
+	
 }
 
 //Movement Event 
 if (current_state = states[2]){
-	
+	//Transition Logic goes here
+	current_state = states[1];
 }
 
 //Tongue Event
 if (current_state = states[3]){
-	//Perform the Tongue Attack
+	//Perform the Tongue Attack --MidRange Action
+	tongueOnCooldown = true;
+	//Change Animation
+	
 	
 	//Transition Logic goes here
+	current_state = states[1];
 }
 
 //Gun Event
@@ -32,13 +121,64 @@ if (current_state = states[4]){
 	//Perform the gun attack
 	
 	//Transition Logic goes here
+	//check stateLock
+	if (lockState == false){
+		//Consider Death
+		if(frogFatherHealth <= 0){
+			current_state = states[6];	
+		}
+		else{ //Move to idle
+			current_state = states[1];	
+		}
+	}
 }
 
 //Vomit Event
 if (current_state = states[5]){
 	//Perform the vomit attack
+	vomitOnCooldown = true;
+	//Lock this State till the animation is done	
 	
-	//Transition Logic goes here
+	sprite_index = spr_FatherVomit;
+	//Create Vomit Particle, and only create when frog opens mouth 
+	if (image_index > 7 && image_index < 8){
+		if(facingLeft){
+			if (!instance_exists(obj_FatherVomitParticle)){
+				part_sys = instance_create_depth(x - 275, y - 250, -10, obj_FatherVomitParticle);
+			}		
+		}
+		else { //Implicit Facing Right
+			if(!instance_exists(obj_FatherVomitParticle)){
+				part_sys = instance_create_depth(x + 275, y - 250, -10, obj_FatherVomitParticle);	
+			}
+		}
+	}
+	//Kill Particles
+	if (image_index > 15 && image_index < 16){
+		if(instance_exists(obj_FatherVomitParticle)){
+			//Alarm kills system
+			obj_FatherVomitParticle.alarm[0] = 0;	
+		}
+	}
+	//===================TRANSITION LOGIC=================
+	//Check transLock
+	if(lockState == false){
+		//Event has finished so start cooldown alarm
+		alarm[0] = vomitCooldown * room_speed;
+		//Conider Death
+		if (frogFatherHealth <= 0 ){
+			current_state = states[6];	
+		}
+		//Consider a tongue attack
+		else if (!tongueOnCooldown){
+			current_state = states[3];
+		}
+		//Go back to idle
+		else {
+			current_state = states[1];	
+		}
+	}
+	
 }
 
 //Death Event
@@ -47,5 +187,4 @@ if (current_state = states[6]){
 	
 	//Transition Logic goes here
 }
-
 

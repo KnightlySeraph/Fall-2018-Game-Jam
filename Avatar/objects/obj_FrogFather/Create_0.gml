@@ -20,6 +20,10 @@ if (instance_exists(obj_player)) { //Check to see if the player exists
 	pX = obj_player.x;
 	pY = obj_player.y;
 }
+//Player Range Booleans
+shortRange = false;
+midRange = false;
+longRange = false;
 
 //Init State Machine
 states = array_create(7);
@@ -32,4 +36,10 @@ states[5] = "vomit";
 states[6] = "death";
 
 current_state = states[0];
-//if (current_state = "Let-Me_Introduce-Myself" ) { show_message("Great Succsess"); }
+
+
+//Triggers
+introEnded = true;
+facingLeft = true;
+facingRight = false;
+lockState = false;

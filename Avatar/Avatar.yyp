@@ -95,6 +95,22 @@
             }
         },
         {
+            "Key": "175e2157-59d1-4b85-bcf1-7300f4e8048d",
+            "Value": {
+                "id": "9db8d89b-85e2-466b-9114-7c5cd108aebd",
+                "resourcePath": "sprites\\spr_storm\\spr_storm.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1aa191fc-0fe9-4fa9-a20f-8b212f5cedee",
+            "Value": {
+                "id": "41d7b102-9f6f-4179-8895-db10f76adc9e",
+                "resourcePath": "objects\\obj_WindZone\\obj_WindZone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e0d4fef-787f-45d8-aa8f-eaee4caa00b0",
             "Value": {
                 "id": "583b9ed3-1ef7-40cd-b400-67eb52767c31",
@@ -172,6 +188,22 @@
                 "id": "0636584c-3790-451a-95b0-1a17a2c65bef",
                 "resourcePath": "views\\2ee6106c-1d87-4d7b-8cdd-e7c6d37bc16c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2ff1fe7e-3e41-41d5-96a1-fd16b3e2e412",
+            "Value": {
+                "id": "fd69077d-1816-4ef3-b592-feb25fe4a70b",
+                "resourcePath": "objects\\obj_menu_brightness\\obj_menu_brightness.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "31428234-e0cf-4ccd-b717-5ba957818364",
+            "Value": {
+                "id": "b86afa95-5922-4aad-b60a-d055429be176",
+                "resourcePath": "objects\\obj_storm\\obj_storm.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -323,6 +355,14 @@
             "Value": {
                 "id": "e07d611c-8000-4d37-870f-19f9267b2fe9",
                 "resourcePath": "sprites\\spr_player_shoot_move\\spr_player_shoot_move.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6b1b0a53-7d14-4141-962a-00e83c215598",
+            "Value": {
+                "id": "1d7d7c5a-c96a-4c4e-9fda-03acf9e550b6",
+                "resourcePath": "sprites\\spr_WindZone\\spr_WindZone.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -730,7 +770,7 @@
             "Key": "c52226b8-852f-4f58-87f5-474023bb986e",
             "Value": {
                 "id": "91d6d2b0-1ac1-4504-86e8-24bd735eb737",
-                "resourcePath": "objects\\obj_pause_input\\obj_pause_input.yy",
+                "resourcePath": "objects\\obj_pause_test\\obj_pause_test.yy",
                 "resourceType": "GMObject"
             }
         },

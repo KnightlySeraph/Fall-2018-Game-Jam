@@ -1,3 +1,4 @@
 /// @description Insert description here
-trigger = false;
-createOnce = false;
+if (move){
+	y -= 3;	
+}

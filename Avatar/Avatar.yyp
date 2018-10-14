@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "75356937-2a1d-4223-877f-6adc9f1fea54",
+            "Value": {
+                "id": "281379cc-cd99-4298-bbd9-7bc7ea295a16",
+                "resourcePath": "sprites\\spr_frog_big_attack\\spr_frog_big_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "828e4ad3-0d71-4c2f-9e73-cbff5ca2208d",
             "Value": {
                 "id": "d683e618-490d-4f90-baeb-46f923a215cb",
@@ -412,6 +420,14 @@
                 "id": "11e367aa-4357-4797-9a3f-f2a938b24fd5",
                 "resourcePath": "views\\85473d81-ce8d-43aa-b3b2-aa2573688351.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "87d5aa35-bdd2-4c42-a89c-3d1b099b9f1b",
+            "Value": {
+                "id": "7aa14fc6-025c-485d-8cc5-e4b103b70b28",
+                "resourcePath": "sprites\\spr_frog_ninja_attack\\spr_frog_ninja_attack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

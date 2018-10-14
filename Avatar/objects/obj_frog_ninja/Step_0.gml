@@ -11,14 +11,14 @@ if(distance_to_object(obj_player) < maxdistance)
 
 if(attacking)
 {
-	//sprite_index = spr_frog_sad_attack;
+	sprite_index = spr_frog_ninja_attack;
 	attack_timer += 1;
-	if(attack_timer >= 19)
+	if(attack_timer >= 16)
 	{
 		attack_timer = 0;
 		attacking = false;
 	}
-	else if(attack_timer >= 11 && can_attack)
+	else if(attack_timer >= 13 && can_attack)
 	{
 		can_attack = false;
 		alarm[0] = 90;
@@ -32,7 +32,7 @@ if(attacking)
 }
 else
 {
-	//sprite_index = spr_frog_sad;	
+	sprite_index = spr_frog_ninja;	
 }
 
 if(obj_player.x > x)

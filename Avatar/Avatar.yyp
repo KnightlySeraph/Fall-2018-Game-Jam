@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "16db542c-b203-40f4-8ec3-8eaaa72467e5",
+            "Value": {
+                "id": "7b5004f2-bf31-4409-8c01-87e81e559f77",
+                "resourcePath": "objects\\obj_hearts\\obj_hearts.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "175e2157-59d1-4b85-bcf1-7300f4e8048d",
             "Value": {
                 "id": "9db8d89b-85e2-466b-9114-7c5cd108aebd",
@@ -551,6 +559,14 @@
             }
         },
         {
+            "Key": "64e28ed6-140a-49d6-b8f5-bfb60b80a76f",
+            "Value": {
+                "id": "34931706-82a8-4d52-879b-05dbbe553e09",
+                "resourcePath": "sprites\\spr_heart\\spr_heart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65ba0ae7-e948-44d7-9ad3-3f39e71c3f65",
             "Value": {
                 "id": "c1ea9050-4105-4094-922c-4516ca98402f",
@@ -780,6 +796,14 @@
                 "id": "89c5962a-5997-471d-8c6a-19f5dd1d54a4",
                 "resourcePath": "rooms\\rm_test_pause\\rm_test_pause.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "8f6acad3-33b0-4526-9f58-5d888871b534",
+            "Value": {
+                "id": "7201dbe1-5e7d-4b32-b6b1-e04c07873e0a",
+                "resourcePath": "sprites\\spr_frog_big_dead\\spr_frog_big_dead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1380,6 +1404,22 @@
                 "id": "635d7911-e956-40a1-b3ea-821cafc29160",
                 "resourcePath": "rooms\\Level2\\Level2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "efc87b13-5b43-49f6-abd6-441838479037",
+            "Value": {
+                "id": "85fc48d0-e0fc-4da1-8f88-0bec0f478827",
+                "resourcePath": "sprites\\spr_frog_ninja_dead\\spr_frog_ninja_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f164aa72-a07a-4c7a-8d4f-473feb27b84e",
+            "Value": {
+                "id": "de34e473-3869-4dac-8477-47f9b3cde33b",
+                "resourcePath": "sprites\\spr_frog_sad_dead\\spr_frog_sad_dead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

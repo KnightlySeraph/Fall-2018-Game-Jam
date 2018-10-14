@@ -1,18 +1,18 @@
 {
-    "id": "59a8428a-c175-4e41-918d-184946bb1635",
+    "id": "16db542c-b203-40f4-8ec3-8eaaa72467e5",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_hearts",
     "eventList": [
         {
-            "id": "1bb5faca-1489-473b-8adc-a2f9509d2e4f",
+            "id": "438b38e0-0646-434b-be25-215e10adb3e6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 64,
             "eventtype": 8,
-            "m_owner": "59a8428a-c175-4e41-918d-184946bb1635"
+            "m_owner": "16db542c-b203-40f4-8ec3-8eaaa72467e5"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "68930527-2702-410d-a8c7-73c06a706b2f",
+    "spriteId": "64e28ed6-140a-49d6-b8f5-bfb60b80a76f",
     "visible": true
 }

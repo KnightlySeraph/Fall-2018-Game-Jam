@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "181a4577-38e6-4fd5-bb3e-0df8a631405c",
+            "Value": {
+                "id": "205c37f3-2166-4412-a32b-528b870426f2",
+                "resourcePath": "sprites\\spr_mainMenu\\spr_mainMenu.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "183a3338-0e9b-41e7-9c2a-490b2e73187c",
             "Value": {
                 "id": "91b49025-0b18-41e8-914e-1fd0ec83e8e9",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "420e6c2a-7733-4498-a727-357349525d15",
+            "Value": {
+                "id": "1d5f03e0-cbd7-475e-b697-93681a9edf44",
+                "resourcePath": "sprites\\spr_main\\spr_main.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44e2132e-f0fa-4bed-86aa-31f9f21628b6",
             "Value": {
                 "id": "f437a0c3-bf08-4420-afcd-a37b5e2cec34",
@@ -603,6 +619,14 @@
             "Value": {
                 "id": "ac8d54c2-198c-4d8a-9ebe-dc0f9427e4cb",
                 "resourcePath": "sprites\\spr_frog_big_attack\\spr_frog_big_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "63c228d6-3b6c-45f9-b32c-706042da3dfa",
+            "Value": {
+                "id": "90a43d81-e065-44e6-9c84-9350fbe64d13",
+                "resourcePath": "sprites\\spr_menu_death\\spr_menu_death.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -844,6 +868,22 @@
                 "id": "a6137256-6c52-4a7c-9f12-144e26ab309c",
                 "resourcePath": "sprites\\spr_groundTile2Halved\\spr_groundTile2Halved.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "889f5f9c-5185-4bd2-b543-5f51fbf382fc",
+            "Value": {
+                "id": "f20cd5ef-c257-40f5-8b08-0455aca0b602",
+                "resourcePath": "sprites\\spr_credits\\spr_credits.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "89009d3c-9821-47a9-8dbc-52cfad753ec9",
+            "Value": {
+                "id": "40aec3e1-4e1c-4ca1-adbb-38f169440b60",
+                "resourcePath": "objects\\obk_menu_butt\\obk_menu_butt.yy",
+                "resourceType": "GMObject"
             }
         },
         {

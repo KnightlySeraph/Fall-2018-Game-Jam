@@ -1,8 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_set_color(c_black);
-draw_set_alpha(1);
-draw_rectangle(0, 0, gui_width, gui_height, 0);
+draw_sprite_stretched(spr_menu_death, 0, 0, 0, gui_width, gui_height);
 
 draw_set_alpha(1);
 draw_set_font(fMenu);
@@ -19,7 +17,7 @@ for(var i = 0; i < menu_items; i++)
 	}
 	else
 	{
-		col = c_black;
+		col = c_red;
 	}
 	draw_set_color(col);
 	var xx = menu_x;

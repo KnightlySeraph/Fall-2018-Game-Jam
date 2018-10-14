@@ -7,7 +7,7 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "b0abd92a-1606-455d-b518-9f8333496577"
+        "4995861b-0f99-423e-bae5-cc6c887e1951"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +25,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_759D8028","id": "b0abd92a-1606-455d-b518-9f8333496577","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_759D8028","objId": "73665d1d-815a-473e-a842-ccee4a07b01c","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 384,"y": 320}
+{"name": "inst_2480DEC0","id": "4995861b-0f99-423e-bae5-cc6c887e1951","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_2480DEC0","objId": "89009d3c-9821-47a9-8dbc-52cfad753ec9","properties": null,"rotation": 0,"scaleX": 0.625,"scaleY": 0.625,"mvc": "1.0","x": 480,"y": 704}
             ],
             "layers": [
 
@@ -43,7 +43,7 @@
             "id": "b71f30ac-60f5-4ffe-95a1-e4f244037b00",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4294967295 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -62,8 +62,8 @@
             "m_serialiseFrozen": false,
             "modelName": "GMRBackgroundLayer",
             "mvc": "1.0",
-            "spriteId": "00000000-0000-0000-0000-000000000000",
-            "stretch": false,
+            "spriteId": "889f5f9c-5185-4bd2-b543-5f51fbf382fc",
+            "stretch": true,
             "userdefined_animFPS": false,
             "userdefined_depth": false,
             "visible": true,

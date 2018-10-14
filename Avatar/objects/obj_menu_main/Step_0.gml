@@ -85,7 +85,7 @@ if(menu_committed != -1)
 			menu_committed = -1;
 			break;
 		case 2:
-			show_debug_message("These buttons don't work.");
+			room_goto(rm_credits);
 			menu_committed = -1;
 			break;
 		case 3:

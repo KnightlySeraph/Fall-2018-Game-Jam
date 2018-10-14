@@ -82,6 +82,8 @@ if (current_state = states[1]){
 	else if (midRange && !tongueOnCooldown){
 		//Transition to tongue attack
 		current_state = states[3];
+		//Lock the machine
+		lockState = true;
 	}
 	//Consider Vomiting
 	else if (shortRange && !vomitOnCooldown){
@@ -133,11 +135,14 @@ if (current_state = states[3]){
 	//Perform the Tongue Attack --MidRange Action
 	tongueOnCooldown = true;
 	//Change Animation
+	sprite_index = spr_FatherTongue;
 	
 	
 	//=================TRANSITION LOGIC==============
 	//Check if Machine is locked
 	if (lockState == false){
+		//Start Cooldown Timer
+		alarm[2] = tongueCooldown * room_speed;
 		//Consider Death
 		if (frogFatherHealth <= 0){
 			current_state = states[6];	

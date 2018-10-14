@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "6ad1aada-6397-41ac-8d19-044696849412",
+            "Value": {
+                "id": "be40260e-3bdc-46b1-b136-af3cd2eeac22",
+                "resourcePath": "sprites\\spr_tongueTile\\spr_tongueTile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b1b0a53-7d14-4141-962a-00e83c215598",
             "Value": {
                 "id": "1d7d7c5a-c96a-4c4e-9fda-03acf9e550b6",
@@ -676,6 +684,14 @@
                 "id": "4c7e5a11-e606-4141-9a92-eb78d02b35d3",
                 "resourcePath": "objects\\obj_destroyPlatform2\\obj_destroyPlatform2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91aa90b7-8697-49f3-8cbb-9910e07f2738",
+            "Value": {
+                "id": "83acbfef-9431-4c7b-89e1-f335d4d6c813",
+                "resourcePath": "sprites\\spr_tongueTip\\spr_tongueTip.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -14,7 +14,7 @@ menu_control = true;
 
 menu[4] = "New Game";
 menu[3] = "Continue";
-menu[2] = "Levels";
+menu[2] = "Credits";
 menu[1] = "Options";
 menu[0] = "Quit";
 

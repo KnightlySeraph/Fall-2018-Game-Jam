@@ -35,3 +35,12 @@ death_timer = 0;
 usingGamepad = false;
 connectedSlot = 0;
 gp_num = gamepad_get_device_count();
+
+if(instance_exists(obj_checkpoint_control))
+{
+	if(obj_checkpoint_control.checked)
+	{
+		x = obj_checkpoint_control.x;
+		y = obj_checkpoint_control.y;
+	}
+}

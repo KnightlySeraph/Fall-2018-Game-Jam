@@ -1,9 +1,4 @@
 /// @description Control menu
-if(obj_player.player_health <= 0)
-{
-	instance_deactivate_all(true);
-	instance_activate_object(self);
-}
 if(menu_control)
 {
 	if(keyboard_check_pressed(vk_up))
@@ -57,7 +52,7 @@ if(menu_committed != -1)
 			menu_committed = -1;
 			break;
 		case 4:
-			show_debug_message("These buttons don't work.");
+			room_goto(obj_checkpoint_control.roomvalue);
 			menu_committed = -1;
 			break;
 		default:

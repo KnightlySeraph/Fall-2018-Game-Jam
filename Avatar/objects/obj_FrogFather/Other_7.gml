@@ -13,3 +13,8 @@ if (sprite_index == spr_FatherFireGun){
 	goToPutAwayGunAnim = true;
 	goToFireGunAnim = false;
 }
+
+if (sprite_index == spr_FatherGunAway){
+	lockState = false;	
+	goToPutAwayGunAnim = false;
+}

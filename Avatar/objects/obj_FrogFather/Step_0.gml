@@ -129,6 +129,9 @@ if (current_state = states[4]){
 	else if (goToFireGunAnim){
 		sprite_index = spr_FatherFireGun;	
 	}
+	else if (goToPutAwayGunAnim){
+		sprite_index = spr_FatherGunAway;	
+	}
 	//Animation End event will switch to gun fire
 	
 	//Transition Logic goes here

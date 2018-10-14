@@ -1239,6 +1239,14 @@
             }
         },
         {
+            "Key": "c8414cac-9315-4efe-9fc4-739dd94a459a",
+            "Value": {
+                "id": "de58af51-fa50-473b-be5f-72cb6c0156e0",
+                "resourcePath": "sprites\\spr_FatherDeath\\spr_FatherDeath.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c91f2c96-4d32-47bc-b1a6-01b1c3c7a5b1",
             "Value": {
                 "id": "10a03b34-b5e6-4c63-9a12-33e3c6353619",

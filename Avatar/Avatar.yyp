@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "5fe6e5cd-a797-4483-93e7-5bf52bc0cb26",
+            "Value": {
+                "id": "ac8d54c2-198c-4d8a-9ebe-dc0f9427e4cb",
+                "resourcePath": "sprites\\spr_frog_big_attack\\spr_frog_big_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65ba0ae7-e948-44d7-9ad3-3f39e71c3f65",
             "Value": {
                 "id": "c1ea9050-4105-4094-922c-4516ca98402f",
@@ -435,6 +443,14 @@
             "Value": {
                 "id": "a6137256-6c52-4a7c-9f12-144e26ab309c",
                 "resourcePath": "sprites\\spr_groundTile2Halved\\spr_groundTile2Halved.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8915eef1-9d61-439e-af48-1d1312cdc84e",
+            "Value": {
+                "id": "b32d515e-ee87-48da-a0dc-59f72f80542d",
+                "resourcePath": "sprites\\spr_frog_ninja_attack\\spr_frog_ninja_attack.yy",
                 "resourceType": "GMSprite"
             }
         },

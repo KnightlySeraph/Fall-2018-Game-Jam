@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "13ad103a-d2df-452b-b240-6a8d099add45",
+            "Value": {
+                "id": "0f6fe467-1b29-4963-9045-fd9839c584c0",
+                "resourcePath": "objects\\obj_FrogFather\\obj_FrogFather.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d560a0-6de6-443a-a7f2-626bc2018b08",
             "Value": {
                 "id": "21a24f29-216b-4c77-88cc-4c76cc0da99b",
@@ -924,6 +932,14 @@
                 "id": "1d9b37ed-0371-44a8-8366-8121189514ee",
                 "resourcePath": "fonts\\fMenu\\fMenu.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "bc70ca9f-d66e-42a1-998c-77f698ef90d7",
+            "Value": {
+                "id": "8398796b-784a-4f04-be8b-290dc13dd1ae",
+                "resourcePath": "views\\bc70ca9f-d66e-42a1-998c-77f698ef90d7.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

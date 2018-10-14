@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "954c7d27-7fac-4373-ba9e-bdfe51f16a44",
+            "Value": {
+                "id": "835d198c-9c61-495e-8c8c-e7a85fc9547d",
+                "resourcePath": "sprites\\spr_frog_big_damage\\spr_frog_big_damage.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97295717-65f3-4fea-b8ea-3fd1d03b7350",
             "Value": {
                 "id": "3266e8bd-9e10-4d9d-8a7e-b77c9e11e6d4",
@@ -711,6 +719,14 @@
             }
         },
         {
+            "Key": "b073b125-2f95-4f42-8b1d-2c938101501f",
+            "Value": {
+                "id": "4dc03ade-2059-41b6-b896-128cc828d6ec",
+                "resourcePath": "objects\\obj_frog_big_damage\\obj_frog_big_damage.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b2286dc8-eb0f-4369-9bda-737c920ee5de",
             "Value": {
                 "id": "131c1cdf-dd89-4e54-bc9d-ea5f8d0a806d",
@@ -755,6 +771,14 @@
             "Value": {
                 "id": "8f7a7ff9-aa47-45f2-979c-436f7636243e",
                 "resourcePath": "objects\\obj_menu_options\\obj_menu_options.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c2883f97-cdb8-4dd5-946f-f10de45da99f",
+            "Value": {
+                "id": "aa85f484-b002-4e5b-83bc-f353d908e764",
+                "resourcePath": "objects\\obj_menu_input\\obj_menu_input.yy",
                 "resourceType": "GMObject"
             }
         },

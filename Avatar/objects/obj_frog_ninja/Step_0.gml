@@ -44,6 +44,12 @@ else
 	image_xscale = 1;	
 }
 
+if (last_sprite != sprite_index)
+{
+   image_index = 0;
+   last_sprite = sprite_index;
+}
+
 if(place_meeting(x,y,obj_wind))
 {
 	instance_destroy();	

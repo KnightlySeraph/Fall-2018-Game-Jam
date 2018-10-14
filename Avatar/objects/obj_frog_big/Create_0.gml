@@ -5,6 +5,14 @@ spd = 9;
 
 state = "idle";
 
-moverange = 750;
+moverange = 1000;
 
 maxdistance = 200;
+
+attack_timer = 0;
+
+last_sprite = sprite_index;
+
+cooldown = false;
+
+damage_sphere = noone;

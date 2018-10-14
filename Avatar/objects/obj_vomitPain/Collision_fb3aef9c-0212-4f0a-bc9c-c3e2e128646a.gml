@@ -1,3 +1,4 @@
+/// @description Insert description here
 with (other){
 	if(!immune){
 		immune = true;

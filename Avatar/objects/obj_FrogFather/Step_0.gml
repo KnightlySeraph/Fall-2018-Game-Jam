@@ -184,6 +184,15 @@ if (current_state == states[4]){
 	}
 	else if (goToFireGunAnim){
 		sprite_index = spr_FatherFireGun;	
+		if(!instance_exists(obj_ColtBul)){
+			if (image_xscale == 1){
+				instance_create_depth(x - 150, y - 100, 0, obj_ColtBul);
+			}
+			else{
+				bul = instance_create_depth(x + 150, y - 100, 0, obj_ColtBul);
+				bul.image_xscale = -1;
+			}
+		}
 	}
 	else if (goToPutAwayGunAnim){
 		sprite_index = spr_FatherGunAway;	
@@ -217,11 +226,17 @@ if (current_state == states[5]){
 		if(facingLeft){
 			if (!instance_exists(obj_FatherVomitParticle)){
 				part_sys = instance_create_depth(x - 275, y - 250, 100000, obj_FatherVomitParticle);
-			}		
+			}
+			if (!instance_exists(obj_vomitPain)){
+				instance_create_depth(x - 50, y - 200, 0, obj_vomitPain);	
+			}
 		}
 		else { //Implicit Facing Right
 			if(!instance_exists(obj_FatherVomitParticle)){
 				part_sys = instance_create_depth(x + 275, y - 250, 100000, obj_FatherVomitParticle);	
+			}
+			if (!instance_exists(obj_vomitPain)){
+				instance_create_depth(x + 50, y - 200, 0, obj_vomitPain);	
 			}
 		}
 	}
@@ -237,7 +252,7 @@ if (current_state == states[5]){
 	//Check transLock
 	if(lockState == false){
 		//Event has finished so start cooldown alarm
-		alarm[2] = vomitCooldown * room_speed;
+		alarm[0] = vomitCooldown * room_speed;
 		//Conider Death
 		if (frogFatherHealth <= 0 ){
 			current_state = states[6];	
@@ -260,5 +275,6 @@ if (current_state = states[6]){
 	sprite_index = spr_FatherDeath;
 	y += 5;
 	//Transition Logic goes here
+	alarm[3] = 90;
 }
 

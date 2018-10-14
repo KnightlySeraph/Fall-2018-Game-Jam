@@ -9,7 +9,8 @@
         "9a5b1fe3-e11e-4562-8f05-5f83bd34f2c7",
         "2991d3b0-b219-4207-bb54-9318c7dd5c92",
         "9b868e43-0aee-4d94-bd72-e9119043629c",
-        "78b21875-88d7-4fcd-8044-985765a70f5b"
+        "78b21875-88d7-4fcd-8044-985765a70f5b",
+        "a723d93d-ed4f-467e-80b6-48a933272b40"
     ],
     "filterType": "GMObject",
     "folderName": "FrogFatherObjects",

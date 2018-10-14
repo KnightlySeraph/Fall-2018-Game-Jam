@@ -1087,6 +1087,14 @@
             }
         },
         {
+            "Key": "a723d93d-ed4f-467e-80b6-48a933272b40",
+            "Value": {
+                "id": "5a2cc8da-a0e6-4880-a45f-755684c57bb0",
+                "resourcePath": "objects\\obj_ColtBul\\obj_ColtBul.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a76ff95a-bcc1-401b-93fc-74a09126a3e7",
             "Value": {
                 "id": "1a7a3edd-792b-4784-9441-a63eded01df8",

@@ -49,3 +49,4 @@ facingRight = false;
 lockState = false;
 goToFireGunAnim = false;
 goToPutAwayGunAnim = false;
+createTongue = false;

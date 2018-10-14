@@ -21,7 +21,8 @@
         "81f850af-1bdd-4b57-b0ca-f67440a4829d",
         "6ad1aada-6397-41ac-8d19-044696849412",
         "91aa90b7-8697-49f3-8cbb-9910e07f2738",
-        "c8414cac-9315-4efe-9fc4-739dd94a459a"
+        "c8414cac-9315-4efe-9fc4-739dd94a459a",
+        "4b3c04c6-303c-4163-9999-624c1ff4432e"
     ],
     "filterType": "GMSprite",
     "folderName": "FrogFatherSprites",

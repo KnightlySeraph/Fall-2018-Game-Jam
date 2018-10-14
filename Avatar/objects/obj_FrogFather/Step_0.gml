@@ -156,6 +156,8 @@ if (current_state == states[3]){
 		}
 	}
 	
+	
+	
 	//=================TRANSITION LOGIC==============
 	//Check if Machine is locked
 	if (lockState == false){

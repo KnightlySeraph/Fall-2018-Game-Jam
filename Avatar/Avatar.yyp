@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "4b3c04c6-303c-4163-9999-624c1ff4432e",
+            "Value": {
+                "id": "7a336f29-23b0-4215-9585-e603a60c1305",
+                "resourcePath": "sprites\\spr_vomitBox\\spr_vomitBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4b77253a-c7fd-425a-9a50-493c51c67bff",
             "Value": {
                 "id": "71c8ead0-5b80-4354-8657-f54117fdaebe",
@@ -724,6 +732,14 @@
                 "id": "05aa5d2f-0821-464b-88ee-86891261b724",
                 "resourcePath": "sprites\\spr_wind\\spr_wind.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "78b21875-88d7-4fcd-8044-985765a70f5b",
+            "Value": {
+                "id": "1c83806c-68c3-400a-b1a3-9594983819be",
+                "resourcePath": "objects\\obj_vomitPain\\obj_vomitPain.yy",
+                "resourceType": "GMObject"
             }
         },
         {

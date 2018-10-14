@@ -29,6 +29,7 @@ switch(state)
 			{
 				state = "attack";
 				alarm[0] = 30;
+				
 			}
 			else if(collision_line(x,y, obj_player.x - maxdistance, obj_player.y, obj_wall, false, false))
 			{
@@ -46,6 +47,8 @@ switch(state)
 			if(distance_to_point(obj_player.x + maxdistance, obj_player.y) <= 0)
 			{
 				state = "attack";
+				alarm[0] = 30;
+				
 			}
 			else if(collision_line(x,y, obj_player.x - maxdistance, obj_player.y, obj_wall, false, false))
 			{
@@ -76,11 +79,15 @@ switch(state)
 		
 		if(attack_timer >= 38)
 		{
-			instance_destroy(damage_sphere);
 			damage_sphere = noone;
 		}
 		else if(attack_timer >= 21)
 		{
+			if(!audio_is_playing(snd_frog_big_attack))
+			{
+				audio_play_sound(snd_frog_big_attack,0,false);
+			}
+			instance_destroy(damage_sphere);
 			if(damage_sphere == noone)
 			{
 				damage_sphere = instance_create_depth(x,y, depth + 1, obj_frog_big_damage);

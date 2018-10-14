@@ -112,6 +112,7 @@ if(can_attack && !attacking)
 	if((obj_player.y + 70 > y-30 && obj_player.y - 50 < y-30) && !collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,false))
 	{
 		attacking = true;
+		audio_play_sound(snd_frog_attack,0,false);
 	}
 }
 

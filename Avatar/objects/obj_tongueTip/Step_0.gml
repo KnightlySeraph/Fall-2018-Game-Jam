@@ -1,10 +1,4 @@
 /// @description Insert description here
-if (moveLeft){
-	x -= moveSpeed;
-	
-}
-else {
-	x += moveSpeed;	
-}
+move_towards_point(pX, pY, moveSpeed)
 
 

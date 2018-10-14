@@ -2,7 +2,7 @@
 moveLeft = false;
 moveRight = false;
 
-moveSpeed = 25;
+moveSpeed = 50;
 
 originX = x;
 
@@ -16,6 +16,8 @@ if (instance_exists(obj_player)){
 		image_xscale = -1;	
 	}
 }
+
+alarm[0] = 45;
 
 
 

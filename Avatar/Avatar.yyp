@@ -1343,6 +1343,14 @@
             }
         },
         {
+            "Key": "cc33782f-526a-43fd-90cc-d82479a4589c",
+            "Value": {
+                "id": "3dd7d4bf-b63b-44ae-8c49-40ff28fc1a5a",
+                "resourcePath": "sprites\\spr_coltBul\\spr_coltBul.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc954b01-33ba-436b-b074-fe89a16fdfd8",
             "Value": {
                 "id": "64a8d50f-7e03-47e0-8fec-419d5cb2e380",

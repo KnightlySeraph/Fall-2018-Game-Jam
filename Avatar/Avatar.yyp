@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1b0416c3-2b1b-49d5-b9e8-7459ee6963f1",
+            "Value": {
+                "id": "81a6addf-8f45-4ee4-bfee-dd7202005b2b",
+                "resourcePath": "sprites\\spr_FatherBalloons50Damaged\\spr_FatherBalloons50Damaged.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1e0d4fef-787f-45d8-aa8f-eaee4caa00b0",
             "Value": {
                 "id": "583b9ed3-1ef7-40cd-b400-67eb52767c31",
@@ -311,6 +319,14 @@
             }
         },
         {
+            "Key": "47c66525-d36b-462f-8021-c37ef16334a0",
+            "Value": {
+                "id": "f1fd3d4b-b061-4056-9fbe-00c4c2358e17",
+                "resourcePath": "views\\47c66525-d36b-462f-8021-c37ef16334a0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4a6c0716-f795-4978-baff-a5a0fafbafcb",
             "Value": {
                 "id": "c21c82f4-eb22-43a9-b89b-d0ae582b1dd2",
@@ -351,6 +367,14 @@
             }
         },
         {
+            "Key": "51944bc0-d0e3-4aa6-903b-d5da44657d64",
+            "Value": {
+                "id": "6c3f6951-0f15-40dc-acb0-497e163473ae",
+                "resourcePath": "sprites\\spr_FatherBalloons75Damaged\\spr_FatherBalloons75Damaged.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52906b92-ebb7-439b-a7b9-efd86e80a124",
             "Value": {
                 "id": "b124e581-949d-4b05-9e55-b2469e446e0f",
@@ -387,6 +411,14 @@
             "Value": {
                 "id": "8639ef82-cf3e-4940-b673-6db28105a181",
                 "resourcePath": "sprites\\spr_player_idle\\spr_player_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5f9a5afc-429d-4627-ac78-ddcd11286209",
+            "Value": {
+                "id": "ade06703-7465-4dcd-9aed-2b4fdcaafccf",
+                "resourcePath": "sprites\\spr_FatherBalloons25Damaged\\spr_FatherBalloons25Damaged.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -519,6 +551,14 @@
             }
         },
         {
+            "Key": "84847ce8-b024-4ca4-86f7-89165794f206",
+            "Value": {
+                "id": "1f8b99ab-c095-4898-a097-5e1fbec270f6",
+                "resourcePath": "sprites\\spr_FatherBalloons50NoDmg\\spr_FatherBalloons50NoDmg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "854573eb-3bd7-435f-9902-eba4dc9fb0ae",
             "Value": {
                 "id": "66aa723c-9559-4326-9108-a003888136a6",
@@ -583,6 +623,14 @@
             }
         },
         {
+            "Key": "8fc2a1f6-bee6-4807-bf27-bf844de3fece",
+            "Value": {
+                "id": "107eabaa-8e7f-4374-ab72-01c542e69c93",
+                "resourcePath": "sprites\\spr_FatherVomit\\spr_FatherVomit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9142f6f5-3ca7-4f8f-962a-fe755f3b170d",
             "Value": {
                 "id": "4c7e5a11-e606-4141-9a92-eb78d02b35d3",
@@ -644,6 +692,14 @@
                 "id": "abd55d96-bb38-4a5d-955e-65864e03f4b4",
                 "resourcePath": "views\\98247a60-b603-4556-b4e6-e6ac52573f17.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9a00b904-e7e3-47e7-9b8d-8031b314a785",
+            "Value": {
+                "id": "9e7aa0d6-8aaa-41c1-82de-c2617d1e136a",
+                "resourcePath": "sprites\\spr_FatherBallonsFullNoDmg\\spr_FatherBallonsFullNoDmg.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -719,6 +775,14 @@
             }
         },
         {
+            "Key": "a3f6a4fe-09f1-48c1-91a5-ed98e19a5847",
+            "Value": {
+                "id": "cebb651a-c721-4623-836c-8a9ab6c51b88",
+                "resourcePath": "sprites\\spr_FatherParticleVomit\\spr_FatherParticleVomit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a76ff95a-bcc1-401b-93fc-74a09126a3e7",
             "Value": {
                 "id": "1a7a3edd-792b-4784-9441-a63eded01df8",
@@ -772,6 +836,14 @@
                 "id": "55928409-0fc3-4ced-9d84-e84a25839ff0",
                 "resourcePath": "views\\ab2a2a0a-67fb-4ea6-a8a5-5f6246901300.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ad1d66b0-655e-4f31-aa4e-96cae67e67b7",
+            "Value": {
+                "id": "6f302703-9c4c-43f2-a637-9a8fc4459110",
+                "resourcePath": "sprites\\spr_FatherIdle\\spr_FatherIdle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -911,6 +983,14 @@
             }
         },
         {
+            "Key": "cc954b01-33ba-436b-b074-fe89a16fdfd8",
+            "Value": {
+                "id": "64a8d50f-7e03-47e0-8fec-419d5cb2e380",
+                "resourcePath": "sprites\\spr_FatherBalloonsFullDamaged\\spr_FatherBalloonsFullDamaged.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "50834bab-2514-43c4-a410-86d867fa1e2f",
@@ -999,6 +1079,14 @@
             }
         },
         {
+            "Key": "e4563ef7-45cf-42ec-b059-8f6ad709a47a",
+            "Value": {
+                "id": "55a91c91-0abf-4cfb-ab00-9653b1688e23",
+                "resourcePath": "rooms\\TheFrogFather\\TheFrogFather.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "e4ee433a-2b33-4677-8339-76c327e04e2d",
             "Value": {
                 "id": "a4e289d8-09f9-4ff9-b411-44129c5de3c6",
@@ -1012,6 +1100,14 @@
                 "id": "87dc7692-b006-4100-98d4-e4902fb9b31a",
                 "resourcePath": "views\\e516cdd4-507e-4bcb-b4d0-b2f37075e6b9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ec5d6857-8e0e-4d7e-bc22-854bfb0ee5f0",
+            "Value": {
+                "id": "18f45a1d-989c-4356-825a-976a2a6f8dc3",
+                "resourcePath": "sprites\\spr_FatherBallons75NoDmg\\spr_FatherBallons75NoDmg.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1052,6 +1148,14 @@
                 "id": "eb4e0fe5-9c63-4cd1-98c1-7e5e7fd45d2a",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fc9a1ff8-d293-49a6-ab7f-f00b506f359f",
+            "Value": {
+                "id": "35ecccf1-4105-4009-8d99-f9012e131d8a",
+                "resourcePath": "sprites\\spr_FatherBalloons25NoDmg\\spr_FatherBalloons25NoDmg.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

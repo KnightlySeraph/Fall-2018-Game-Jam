@@ -22,6 +22,7 @@ if(attacking)
 	{
 		can_attack = false;
 		alarm[0] = 90;
+		audio_play_sound(snd_frog_attack,0,false);
 		with(instance_create_depth(x,y - 30,depth + 1, obj_projectile))
 		{
 			state = "follow";

@@ -1,4 +1,9 @@
 /// @description The Father's AI
+//Balloons Attach to Frog and stay pinned
+balloonObj1.x = x - 200;
+balloonObj1.y = y - 375;
+balloonObj2.x = x + 175;
+balloonObj2.y = y - 325;
 //Constant Player Reference
 if (instance_exists(obj_player)){
 	pX = obj_player.x;

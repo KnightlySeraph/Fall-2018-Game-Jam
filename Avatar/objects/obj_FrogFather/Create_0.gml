@@ -1,4 +1,9 @@
 /// @description Init all Boss Variables
+//Init Balloons
+if (!instance_exists(obj_FatherBalloons)){
+	balloonObj1 = instance_create_depth(x, y - 450, 0, obj_FatherBalloons);	
+	balloonObj2 = instance_create_depth(x - 50, y - 450, 0, obj_FatherBalloons);
+}
 //Set the Father's health
 frogFatherHealth = 40;
 

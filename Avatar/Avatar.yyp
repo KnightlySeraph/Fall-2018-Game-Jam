@@ -583,6 +583,14 @@
             }
         },
         {
+            "Key": "9142f6f5-3ca7-4f8f-962a-fe755f3b170d",
+            "Value": {
+                "id": "4c7e5a11-e606-4141-9a92-eb78d02b35d3",
+                "resourcePath": "objects\\obj_destroyPlatform2\\obj_destroyPlatform2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "92012fb7-1e36-4cbe-a8b3-e48a040b707c",
             "Value": {
                 "id": "143186e0-3978-4ece-aa67-0d91b193c1f6",
@@ -843,6 +851,14 @@
             "Value": {
                 "id": "8f7a7ff9-aa47-45f2-979c-436f7636243e",
                 "resourcePath": "objects\\obj_menu_options\\obj_menu_options.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c07f6174-ac65-4b39-9228-4fc6188982dc",
+            "Value": {
+                "id": "e7f6a962-a2b9-48d9-b0b5-7911fab81ceb",
+                "resourcePath": "objects\\obj_windController2\\obj_windController2.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -18,3 +18,9 @@ if (sprite_index == spr_FatherGunAway){
 	lockState = false;	
 	goToPutAwayGunAnim = false;
 }
+
+if (sprite_index == spr_FatherTongue){
+	image_speed = 0;
+	image_index = 11;
+	createTongue = true;
+}

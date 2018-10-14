@@ -82,6 +82,8 @@ if (current_state = states[1]){
 	else if (midRange && !tongueOnCooldown){
 		//Transition to tongue attack
 		current_state = states[3];
+		//Lock the machine
+		lockState = true;
 	}
 	//Consider Vomiting
 	else if (shortRange && !vomitOnCooldown){
@@ -129,15 +131,27 @@ if (current_state = states[2]){
 }
 
 //Tongue Event
-if (current_state = states[3]){
+if (current_state == states[3]){
 	//Perform the Tongue Attack --MidRange Action
+	
 	tongueOnCooldown = true;
 	//Change Animation
-	
+	sprite_index = spr_FatherTongue;
+	if(!instance_exists(obj_tongueTip) && createTongue){
+		instance_create_depth(x - 50, y -275, 0, obj_tongueTip);
+		if (facingLeft) {
+			obj_tongueTip.moveLeft = true;	
+		}
+		else{
+			obj_tongueTip.moveRight = true;	
+		}
+	}
 	
 	//=================TRANSITION LOGIC==============
 	//Check if Machine is locked
 	if (lockState == false){
+		//Start Cooldown Timer
+		alarm[2] = tongueCooldown * room_speed;
 		//Consider Death
 		if (frogFatherHealth <= 0){
 			current_state = states[6];	
@@ -151,7 +165,7 @@ if (current_state = states[3]){
 }
 
 //Gun Event
-if (current_state = states[4]){
+if (current_state == states[4]){
 	//Perform the gun attack
 	gunOnCooldown = true;
 	if (!goToFireGunAnim && !goToPutAwayGunAnim){
@@ -181,7 +195,7 @@ if (current_state = states[4]){
 }
 
 //Vomit Event
-if (current_state = states[5]){
+if (current_state == states[5]){
 	//Perform the vomit attack
 	vomitOnCooldown = true;
 	//Lock this State till the animation is done	

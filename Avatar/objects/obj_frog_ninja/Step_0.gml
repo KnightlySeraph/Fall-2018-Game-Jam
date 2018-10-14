@@ -30,6 +30,15 @@ if(attacking)
 		}
 	}
 }
+else if(state == "dead")
+{
+	sprite_index = spr_frog_ninja_dead;
+	timer+= 1;
+	if(timer >= 10)
+	{
+		instance_destroy();	
+	}
+}
 else
 {
 	sprite_index = spr_frog_ninja;	
@@ -50,7 +59,8 @@ if (last_sprite != sprite_index)
    last_sprite = sprite_index;
 }
 
-if(place_meeting(x,y,obj_wind))
+if(place_meeting(x,y,obj_wind) && state != "dead")
 {
-	instance_destroy();	
+	state = "dead";
+	timer = 0;
 }

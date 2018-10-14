@@ -243,7 +243,6 @@ if(dead)
 	death_timer += 1;
 	if(death_timer > 38)
 	{
-		instance_deactivate_all(true);
 		instance_activate_object(obj_menu_deathscreen);
 	}
 }

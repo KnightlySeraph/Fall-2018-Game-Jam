@@ -1087,14 +1087,6 @@
             }
         },
         {
-            "Key": "b51ab775-b431-4329-a42b-a356bf083989",
-            "Value": {
-                "id": "48d16049-8990-4333-b587-dfc6ea25a8a2",
-                "resourcePath": "views\\b51ab775-b431-4329-a42b-a356bf083989.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "b8904ee4-3fb1-4aa2-aaf8-05f14c32baa0",
             "Value": {
                 "id": "8753e937-02b5-43e4-bc4c-7b5f206927a2",
@@ -1324,14 +1316,6 @@
                 "id": "55a91c91-0abf-4cfb-ab00-9653b1688e23",
                 "resourcePath": "rooms\\TheFrogFather\\TheFrogFather.yy",
                 "resourceType": "GMRoom"
-            }
-        },
-        {
-            "Key": "e4c09d71-34d5-42de-ad80-eba226023204",
-            "Value": {
-                "id": "6d987872-f769-4bd0-a0f2-cef303ae9146",
-                "resourcePath": "views\\e4c09d71-34d5-42de-ad80-eba226023204.yy",
-                "resourceType": "GMFolder"
             }
         },
         {

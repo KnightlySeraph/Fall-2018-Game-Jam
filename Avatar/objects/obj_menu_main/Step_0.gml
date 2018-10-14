@@ -49,7 +49,7 @@ if(menu_committed != -1)
 			menu_committed = -1;
 			break;
 		case 4:
-			room_goto(rm_test_pause);
+			room_goto(Level1);
 			menu_committed = -1;
 			break;
 		default:

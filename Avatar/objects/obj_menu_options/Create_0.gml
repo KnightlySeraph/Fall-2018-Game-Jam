@@ -12,8 +12,7 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[3] = "Volume";
-menu[2] = "Brightness";
+menu[2] = "Volume";
 menu[1] = "Fullscreen";
 menu[0] = "Back";
 

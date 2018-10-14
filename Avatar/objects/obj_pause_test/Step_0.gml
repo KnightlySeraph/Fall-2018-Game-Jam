@@ -25,6 +25,9 @@ if(keyboard_check_pressed(vk_escape))
 		global.pausestep -= 1;
 		instance_activate_object(obj_menu_pause);
 		instance_deactivate_object(obj_menu_options);
+		instance_deactivate_object(obj_menu_volume);
+		instance_deactivate_object(obj_menu_brightness);
+		instance_deactivate_object(obj_menu_screen);
 	}
 	else if(global.pause && global.pausestep == 3)
 	{

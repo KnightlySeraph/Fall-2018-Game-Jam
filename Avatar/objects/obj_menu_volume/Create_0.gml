@@ -23,7 +23,7 @@ menu[0] = "Back";
 //label text
 label[2] = "Volume";
 label[1] = "Music";
-label[0] = "Game";
+label[0] = "Effects";
 
 //# of items in label & menu
 label_items = array_length_1d(label);

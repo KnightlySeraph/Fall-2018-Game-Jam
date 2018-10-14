@@ -58,8 +58,13 @@ if(menu_committed != -1)
 			break;
 		case 5:
 			global.pause = false;
+			global.pausestep -= 1;
 			instance_activate_all();
 			instance_deactivate_object(self);
+			instance_deactivate_object(obj_menu_options);
+			instance_deactivate_object(obj_menu_volume);
+			instance_deactivate_object(obj_menu_brightness);
+			instance_deactivate_object(obj_menu_screen);
 			menu_committed = -1;
 			break;
 		default:

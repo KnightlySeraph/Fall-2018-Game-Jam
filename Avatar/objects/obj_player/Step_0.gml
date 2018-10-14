@@ -248,6 +248,10 @@ if(dead)
 }
 else if(shooting)
 {
+	if(!audio_is_playing(snd_wind))
+	{
+		audio_play_sound(snd_wind,0,true);	
+	}
 	if(leftright != 0)
 	{
 		sprite_index = spr_player_shoot_move;
@@ -267,6 +271,7 @@ else if(shooting)
 }
 else
 {
+	audio_stop_sound(snd_wind);
 	if(leftright != 0)
 	{
 		sprite_index = spr_player_move;
@@ -282,5 +287,14 @@ else
 	else
 	{
 		sprite_index = spr_player_idle;	
+	}
+}
+
+if(dead)
+{
+	audio_stop_sound(snd_wind);
+	if(!audio_is_playing(snd_whoosh))
+	{
+		audio_play_sound(snd_whoosh, 0, false);	
 	}
 }

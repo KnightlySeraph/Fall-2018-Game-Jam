@@ -30,3 +30,8 @@ player_health = 3;
 dead = false;
 immune = false;
 death_timer = 0;
+
+//Gamepad Variables
+usingGamepad = false;
+connectedSlot = 0;
+gp_num = gamepad_get_device_count();

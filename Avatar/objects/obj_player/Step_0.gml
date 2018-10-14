@@ -1,3 +1,24 @@
+//Controller Check
+if (keyboard_check_pressed(ord("C"))){
+		for (var i = 0; i < gp_num; i++){
+			if (gamepad_is_connected(i)) {
+				show_message("Gamepad Connect to slot " + string(i));
+				usingGamepad = true;
+				connectedSlot = i;
+				gamepad_set_axis_deadzone(i, 0.05);
+				break;
+			}
+		}
+}
+if (usingGamepad){
+	haxis = gamepad_axis_value(connectedSlot, gp_axislh);
+	vaxis = gamepad_axis_value(connectedSlot, gp_axislv);
+	if (gamepad_button_check_pressed(connectedSlot, gp_face4)){
+		show_debug_message("vaxis is: " + string(vaxis) + "   haxis is: " + string(haxis));	
+	}
+}
+//End Controller Check -- Justin
+
 updown = 0;
 leftright = 0;
 
@@ -9,33 +30,66 @@ if(player_health <= 0 && !dead)
 }
 else
 {
-	if(keyboard_check(ord("W"))) 
-	{
-		//Move Up
-		updown -= 1;
-		if(tempvsp > -templimit) tempvsp -= 1;
+	//Controller Inputs
+	if (usingGamepad){
+		if(vaxis < -0.05) {
+			//Move Up
+			updown -= 1;
+			if(tempvsp > -templimit) tempvsp -= 1;
+		}
+		if(haxis < -0.05) {
+			//Move Left
+			leftright -= 1; 
+			if(temphsp > -templimit) temphsp -= 1;
+		}
+		if(vaxis > 0.05){
+			//Move Down
+			updown += 1; 
+			if(tempvsp < templimit) tempvsp += 2;
+		}
+		if(haxis > 0.05) {
+			//Move Right
+			leftright += 1; 
+			if(temphsp < templimit) temphsp += 1;
+		}
+		if(gamepad_button_check(connectedSlot, gp_face3) && !recharge && windPower > 0){
+			show_debug_message("Sqaure Pressed");
+			shooting = true;
+		}
+		else {
+			shooting = false;
+		}
 	}
-	if(keyboard_check(ord("A"))) 
-	{
-		//Move Left
-		leftright -= 1; 
-		if(temphsp > -templimit) temphsp -= 1;
-	}
-	if(keyboard_check(ord("S")))
-	{
-		//Move Down
-		updown += 1; 
-		if(tempvsp < templimit) tempvsp += 2;
-	}
-	if(keyboard_check(ord("D"))) 
-	{
-		//Move Right
-		leftright += 1; 
-		if(temphsp < templimit) temphsp += 1;
-	}
+	//End --Justin
+	else { //Not Using Gamepad -- Justin
+		if(keyboard_check(ord("W"))) 
+		{
+			//Move Up
+			updown -= 1;
+			if(tempvsp > -templimit) tempvsp -= 1;
+		}
+		if(keyboard_check(ord("A"))) 
+		{
+			//Move Left
+			leftright -= 1; 
+			if(temphsp > -templimit) temphsp -= 1;
+		}
+		if(keyboard_check(ord("S")))
+		{
+			//Move Down
+			updown += 1; 
+			if(tempvsp < templimit) tempvsp += 2;
+		}
+		if(keyboard_check(ord("D"))) 
+		{
+			//Move Right
+			leftright += 1; 
+			if(temphsp < templimit) temphsp += 1;
+		}
 
-	if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
-	else shooting = false;	
+		if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
+		else shooting = false;	
+	}
 }
 
 

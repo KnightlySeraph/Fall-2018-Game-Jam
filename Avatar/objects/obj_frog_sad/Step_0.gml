@@ -120,7 +120,7 @@ if(attacking)
 	else if(attack_timer >= 11 && can_attack)
 	{
 		can_attack = false;
-		alarm[1] = 120;
+		alarm[1] = 90;
 		with(instance_create_depth(x,y - 30,depth + 1, obj_projectile))
 		{
 			state = "forward";
@@ -144,5 +144,3 @@ if (last_sprite != sprite_index)
    image_index = 0;
    last_sprite = sprite_index;
 }
-
-

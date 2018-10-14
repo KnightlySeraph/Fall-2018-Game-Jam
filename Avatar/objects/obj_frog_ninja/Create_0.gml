@@ -6,3 +6,5 @@ attacking = false;
 attack_timer = 0;
 
 last_sprite = sprite_index;
+
+state = "";

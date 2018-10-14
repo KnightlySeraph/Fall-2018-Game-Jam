@@ -106,6 +106,14 @@ switch(state)
 			alarm[1] = 20;
 		}
 		break;
+	case("dead"):
+		sprite_index = spr_frog_big_dead;
+		timer+= 1;
+		if(timer >= 19)
+		{
+			instance_destroy();	
+		}
+		break;
 }
 
 if (last_sprite != sprite_index)
@@ -114,8 +122,9 @@ if (last_sprite != sprite_index)
    last_sprite = sprite_index;
 }
 
-if(maxHealth <= 0)
+if(maxHealth <= 0  && state != "dead")
 {
 	instance_destroy(damage_sphere);
-	instance_destroy();	
+	state = "dead";
+	timer = 0;
 }

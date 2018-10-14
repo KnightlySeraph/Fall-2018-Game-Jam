@@ -43,3 +43,8 @@ else
 {
 	image_xscale = 1;	
 }
+
+if(place_meeting(x,y,obj_wind))
+{
+	instance_destroy();	
+}

@@ -102,7 +102,7 @@ if(can_attack && !attacking)
 		image_xscale = 1;	
 		direct = -1;
 	}
-	if((obj_player.y + 60 > y-30 && obj_player.y - 30 < y-30) && !collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,false))
+	if((obj_player.y + 70 > y-30 && obj_player.y - 50 < y-30) && !collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,false))
 	{
 		attacking = true;
 	}

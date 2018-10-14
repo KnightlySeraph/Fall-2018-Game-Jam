@@ -1,33 +1,43 @@
 updown = 0;
 leftright = 0;
 
-if(keyboard_check(ord("W"))) 
+if(player_health <= 0 && !dead)
 {
-	//Move Up
-	updown -= 1;
-	if(tempvsp > -templimit) tempvsp -= 1;
+	shooting = false;
+	dead = true;
+	//REMOVE PLAYER FROM CAMERA
 }
-if(keyboard_check(ord("A"))) 
+else
 {
-	//Move Left
-	leftright -= 1; 
-	if(temphsp > -templimit) temphsp -= 1;
-}
-if(keyboard_check(ord("S")))
-{
-	//Move Down
-	updown += 1; 
-	if(tempvsp < templimit) tempvsp += 2;
-}
-if(keyboard_check(ord("D"))) 
-{
-	//Move Right
-	leftright += 1; 
-	if(temphsp < templimit) temphsp += 1;
+	if(keyboard_check(ord("W"))) 
+	{
+		//Move Up
+		updown -= 1;
+		if(tempvsp > -templimit) tempvsp -= 1;
+	}
+	if(keyboard_check(ord("A"))) 
+	{
+		//Move Left
+		leftright -= 1; 
+		if(temphsp > -templimit) temphsp -= 1;
+	}
+	if(keyboard_check(ord("S")))
+	{
+		//Move Down
+		updown += 1; 
+		if(tempvsp < templimit) tempvsp += 2;
+	}
+	if(keyboard_check(ord("D"))) 
+	{
+		//Move Right
+		leftright += 1; 
+		if(temphsp < templimit) temphsp += 1;
+	}
+
+	if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
+	else shooting = false;	
 }
 
-if(keyboard_check(vk_enter) && !recharge && windPower > 0) shooting = true;
-else shooting = false;
 
 //HSP is equal to the speed plus the temp hsp
 hsp = ((leftright * movespd) + temphsp);
@@ -58,32 +68,35 @@ if(temphsp != 0)
 }
 
 //Check if colliding with walls on left or right
-if(place_meeting(x+hsp, y, obj_wall))
+if(!dead)
 {
-	while(!place_meeting(x+sign(hsp), y, obj_wall))
+	if(place_meeting(x+hsp, y, obj_wall))
 	{
-		x += sign(hsp);	
-	}
-	//If moving left or right, big bounce
-	if(leftright != 0) temphsp = bigbounce * -sign(hsp);
-	//Else, small bounce
-	else temphsp = smallbounce * -sign(hsp);
+		while(!place_meeting(x+sign(hsp), y, obj_wall))
+		{
+			x += sign(hsp);	
+		}
+		//If moving left or right, big bounce
+		if(leftright != 0) temphsp = bigbounce * -sign(hsp);
+		//Else, small bounce
+		else temphsp = smallbounce * -sign(hsp);
 
-	hsp = 0;
-}
-//Check if colliding with walls up or down
-if(place_meeting(x, y + vsp, obj_wall))
-{
-	while(!place_meeting(x, y+sign(vsp), obj_wall))
+		hsp = 0;
+	}
+	//Check if colliding with walls up or down
+	if(place_meeting(x, y + vsp, obj_wall))
 	{
-		y += sign(vsp);	
-	}
-	//IF moving up or down, big bounce
-	if(updown != 0) tempvsp = bigbounce * -sign(vsp);
-	//Else, small bounce
-	else tempvsp = smallbounce * -sign(vsp);
+		while(!place_meeting(x, y+sign(vsp), obj_wall))
+		{
+			y += sign(vsp);	
+		}
+		//IF moving up or down, big bounce
+		if(updown != 0) tempvsp = bigbounce * -sign(vsp);
+		//Else, small bounce
+		else tempvsp = smallbounce * -sign(vsp);
 
-	vsp = 0;
+		vsp = 0;
+	}
 }
 
 //SHOOTING
@@ -154,7 +167,26 @@ else if(leftright < 0)
 	direct = -1;
 }
 
-if(shooting)
+if(place_meeting(x,y,obj_projectile) && !immune)
+{
+	immune = true;
+	player_health -= 1;
+	alarm[1] = 30;
+}
+
+
+if(dead)
+{
+	sprite_index = spr_player_dead;	
+	tempvsp += tempvsp + 1;
+	temphsp -= direct * 1;
+	death_timer += 1;
+	if(death_timer > 38)
+	{
+		//GO TO DEATH SCREEN	
+	}
+}
+else if(shooting)
 {
 	if(leftright != 0)
 	{

@@ -7,7 +7,8 @@ switch(state)
 	case("follow"):
 		if(speed == 0)
 		{
-			move_towards_point(target_x,target_y,spd);	
+			move_towards_point(target_x,target_y,spd);
+			image_angle = point_direction(target_x,target_y,x,y);
 		}
 		break;
 }

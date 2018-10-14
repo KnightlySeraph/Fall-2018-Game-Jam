@@ -25,3 +25,8 @@ windMax = 200;
 windPower = windMax;
 recharge = false;
 refillWind = false;
+
+player_health = 3;
+dead = false;
+immune = false;
+death_timer = 0;

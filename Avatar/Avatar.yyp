@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0d71c47c-18dc-4b24-8115-b2c8132a97e9",
+            "Value": {
+                "id": "f56f0e41-d634-4afe-a44b-bc15134add86",
+                "resourcePath": "objects\\obj_windParticles2\\obj_windParticles2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0f4d867c-1f45-41b5-a678-3889f8e9ca30",
             "Value": {
                 "id": "54d4e04c-c8e5-483f-9b82-d69fc0d8556f",
@@ -295,6 +303,14 @@
             }
         },
         {
+            "Key": "5fe6e5cd-a797-4483-93e7-5bf52bc0cb26",
+            "Value": {
+                "id": "ac8d54c2-198c-4d8a-9ebe-dc0f9427e4cb",
+                "resourcePath": "sprites\\spr_frog_big_attack\\spr_frog_big_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65ba0ae7-e948-44d7-9ad3-3f39e71c3f65",
             "Value": {
                 "id": "c1ea9050-4105-4094-922c-4516ca98402f",
@@ -308,6 +324,14 @@
                 "id": "e07d611c-8000-4d37-870f-19f9267b2fe9",
                 "resourcePath": "sprites\\spr_player_shoot_move\\spr_player_shoot_move.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6bc01c87-1c61-41ec-a1c6-213a1d54b2ff",
+            "Value": {
+                "id": "3920ba1a-417f-4500-b0a2-b33d7a67c212",
+                "resourcePath": "objects\\obj_windController\\obj_windController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -399,10 +423,26 @@
             }
         },
         {
+            "Key": "884c35f1-e88c-4749-b416-1bdc31c1ee42",
+            "Value": {
+                "id": "21e09fb6-fbef-4f8c-a5d2-3805381a30a3",
+                "resourcePath": "views\\884c35f1-e88c-4749-b416-1bdc31c1ee42.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8859f691-6651-4558-b61c-82e749c4994b",
             "Value": {
                 "id": "a6137256-6c52-4a7c-9f12-144e26ab309c",
                 "resourcePath": "sprites\\spr_groundTile2Halved\\spr_groundTile2Halved.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8915eef1-9d61-439e-af48-1d1312cdc84e",
+            "Value": {
+                "id": "b32d515e-ee87-48da-a0dc-59f72f80542d",
+                "resourcePath": "sprites\\spr_frog_ninja_attack\\spr_frog_ninja_attack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -508,6 +548,14 @@
                 "id": "885082da-4934-4395-9ef7-287550951b4c",
                 "resourcePath": "objects\\obj_camera\\obj_camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9e6f7837-7b77-4271-83e9-73b6b9520ae1",
+            "Value": {
+                "id": "dfe88b3e-42f9-44e9-8972-263841a86249",
+                "resourcePath": "sprites\\spr_frog_ninja\\spr_frog_ninja.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -631,6 +679,14 @@
             }
         },
         {
+            "Key": "b411985e-c3b1-4c26-861b-add416dd7e33",
+            "Value": {
+                "id": "0dc09340-cfc0-47ff-9241-ac8850c75823",
+                "resourcePath": "sprites\\spr_player_dead\\spr_player_dead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b8904ee4-3fb1-4aa2-aaf8-05f14c32baa0",
             "Value": {
                 "id": "8753e937-02b5-43e4-bc4c-7b5f206927a2",
@@ -679,6 +735,14 @@
             }
         },
         {
+            "Key": "c6939b03-d85f-43ac-8a9b-90ff9945d33a",
+            "Value": {
+                "id": "591fdc3c-3bd0-42fb-8774-9b0342122349",
+                "resourcePath": "sprites\\spr_smallCollision\\spr_smallCollision.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c6960c5a-d71f-461b-a33d-a0bf452d4a1c",
             "Value": {
                 "id": "c42a26dd-c477-4d2c-9f48-2267b85144e5",
@@ -703,6 +767,14 @@
             }
         },
         {
+            "Key": "d03aa039-aac1-4c1d-95c6-5f7e9a16fc8e",
+            "Value": {
+                "id": "46b543dc-6081-4c20-b7c7-5aff31f2351d",
+                "resourcePath": "objects\\obj_destroyPlatform\\obj_destroyPlatform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d5805213-0e99-4bce-acc6-6948f86ddf5d",
             "Value": {
                 "id": "5cd2bd45-ce1c-4825-afb9-fccb207dd5db",
@@ -724,6 +796,14 @@
                 "id": "c7dc2fa7-ce46-462b-a601-788502052741",
                 "resourcePath": "sprites\\spr_cloud1\\spr_cloud1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db33a888-a3d4-44ee-8eb8-450fa4a003c6",
+            "Value": {
+                "id": "25b111ce-4200-4906-b77e-a0fe7191bc70",
+                "resourcePath": "objects\\obj_frog_ninja\\obj_frog_ninja.yy",
+                "resourceType": "GMObject"
             }
         },
         {

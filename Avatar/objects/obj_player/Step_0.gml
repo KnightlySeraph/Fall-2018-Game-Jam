@@ -5,7 +5,7 @@ if(player_health <= 0 && !dead)
 {
 	shooting = false;
 	dead = true;
-	//REMOVE PLAYER FROM CAMERA
+	obj_camera.follow = noone;
 }
 else
 {

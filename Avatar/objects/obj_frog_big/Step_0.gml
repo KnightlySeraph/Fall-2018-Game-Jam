@@ -1,11 +1,15 @@
 switch(state)
 {
 	case("idle"):
+		sprite_index = spr_frog_big;
 		if(distance_to_object(obj_player) <= moverange)
 		{
 			if(!collision_line(x,y, obj_player.x + (sign(x - obj_player.x) * maxdistance ), obj_player.y, obj_wall, false, false))
 			{
-				state = "move";
+				if(!cooldown)
+				{
+					state = "move";
+				}
 			}
 		}
 		break;
@@ -36,7 +40,6 @@ switch(state)
 			if(distance_to_point(obj_player.x + maxdistance, obj_player.y) <= 0)
 			{
 				state = "attack";
-				alarm[0] = 30;
 			}
 			else if(collision_line(x,y, obj_player.x - maxdistance, obj_player.y, obj_wall, false, false))
 			{
@@ -53,5 +56,39 @@ switch(state)
 		
 	case("attack"):
 		speed = 0;
+		
+		attack_timer += 1;
+		if(attack_timer >= 10)
+		{
+			sprite_index = spr_frog_big_attack;
+		}
+		
+		if(attack_timer >= 38)
+		{
+			instance_destroy(damage_sphere);
+			damage_sphere = noone;
+		}
+		else if(attack_timer >= 21)
+		{
+			if(damage_sphere == noone)
+			{
+				damage_sphere = instance_create_depth(x,y, depth + 1, obj_frog_big_damage);
+				damage_sphere.image_xscale = image_xscale;
+			}
+		}
+		
+		if(attack_timer >= 43)
+		{
+			attack_timer = 0;
+			state = "idle";
+			cooldown = true;
+			alarm[0] = 30;
+		}
 		break;
+}
+
+if (last_sprite != sprite_index)
+{
+   image_index = 0;
+   last_sprite = sprite_index;
 }

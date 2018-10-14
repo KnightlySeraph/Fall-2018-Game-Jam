@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "954c7d27-7fac-4373-ba9e-bdfe51f16a44",
+            "Value": {
+                "id": "835d198c-9c61-495e-8c8c-e7a85fc9547d",
+                "resourcePath": "sprites\\spr_frog_big_damage\\spr_frog_big_damage.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "97295717-65f3-4fea-b8ea-3fd1d03b7350",
             "Value": {
                 "id": "3266e8bd-9e10-4d9d-8a7e-b77c9e11e6d4",
@@ -676,6 +684,14 @@
                 "id": "e51d6f8c-0b9e-4421-8c1a-d78ab96228d0",
                 "resourcePath": "sprites\\spr_pillar2\\spr_pillar2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b073b125-2f95-4f42-8b1d-2c938101501f",
+            "Value": {
+                "id": "4dc03ade-2059-41b6-b896-128cc828d6ec",
+                "resourcePath": "objects\\obj_frog_big_damage\\obj_frog_big_damage.yy",
+                "resourceType": "GMObject"
             }
         },
         {

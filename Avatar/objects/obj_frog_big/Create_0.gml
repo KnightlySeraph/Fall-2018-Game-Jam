@@ -16,3 +16,7 @@ last_sprite = sprite_index;
 cooldown = false;
 
 damage_sphere = noone;
+
+immune = false;
+
+maxHealth = 5;

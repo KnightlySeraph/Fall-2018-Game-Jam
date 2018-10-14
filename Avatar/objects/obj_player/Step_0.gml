@@ -173,6 +173,12 @@ if(place_meeting(x,y,obj_projectile) && !immune)
 	player_health -= 1;
 	alarm[1] = 30;
 }
+if(place_meeting(x,y,obj_frog_big_damage) && !immune)
+{
+	immune = true;
+	player_health -= 1;
+	alarm[1] = 30;
+}
 
 
 if(dead)

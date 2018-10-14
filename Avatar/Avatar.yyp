@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "4e06b3dd-8490-47d9-8d27-3c558739aa89",
+            "Value": {
+                "id": "5f56b185-4148-4734-885e-cc53e20f1157",
+                "resourcePath": "sprites\\spr_frog_big_hurt\\spr_frog_big_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52906b92-ebb7-439b-a7b9-efd86e80a124",
             "Value": {
                 "id": "b124e581-949d-4b05-9e55-b2469e446e0f",

@@ -12,7 +12,7 @@ menu_y = gui_height - 2 * menu_itemheight;
 menu_committed = -1;
 menu_control = true;
 
-menu[4] = spr_new;
+menu[3] = spr_new;
 menu[2] = spr_cred;
 menu[1] = spr_opt;
 menu[0] = spr_quit;

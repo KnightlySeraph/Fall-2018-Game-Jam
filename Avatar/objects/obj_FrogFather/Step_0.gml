@@ -11,11 +11,13 @@ if (instance_exists(obj_player)){
 		//Face Left
 		image_xscale = 1;
 		facingLeft = true;
+		facingRight = false;
 	}
 	//Implicitly locacted left of player
 	else{
 		image_xscale = -1;
-		facingRight = false;
+		facingRight = true;
+		facingLeft = false;
 	}
 }
 
@@ -104,6 +106,24 @@ if (current_state = states[1]){
 
 //Movement Event 
 if (current_state = states[2]){
+	//Slowly move to player location
+	if (dist > 250){
+		if ( x > pX) {
+			x -= 4; 	
+		}
+		else{
+			x += 4;	
+		}
+		if(y > pY){
+			//Moving Down
+			y -= 4;
+		}
+		else{
+			//Moving Down
+			y += 4;
+		}
+	}
+	
 	//Transition Logic goes here
 	current_state = states[1];
 }
@@ -115,8 +135,19 @@ if (current_state = states[3]){
 	//Change Animation
 	
 	
-	//Transition Logic goes here
-	current_state = states[1];
+	//=================TRANSITION LOGIC==============
+	//Check if Machine is locked
+	if (lockState == false){
+		//Consider Death
+		if (frogFatherHealth <= 0){
+			current_state = states[6];	
+		}
+		//Go back to idle
+		else{
+			current_state = states[2];	
+		}
+	}
+	
 }
 
 //Gun Event
@@ -160,12 +191,12 @@ if (current_state = states[5]){
 	if (image_index > 7 && image_index < 8){
 		if(facingLeft){
 			if (!instance_exists(obj_FatherVomitParticle)){
-				part_sys = instance_create_depth(x - 275, y - 250, -10, obj_FatherVomitParticle);
+				part_sys = instance_create_depth(x - 275, y - 250, 100000, obj_FatherVomitParticle);
 			}		
 		}
 		else { //Implicit Facing Right
 			if(!instance_exists(obj_FatherVomitParticle)){
-				part_sys = instance_create_depth(x + 275, y - 250, -10, obj_FatherVomitParticle);	
+				part_sys = instance_create_depth(x + 275, y - 250, 100000, obj_FatherVomitParticle);	
 			}
 		}
 	}
@@ -173,7 +204,8 @@ if (current_state = states[5]){
 	if (image_index > 15 && image_index < 16){
 		if(instance_exists(obj_FatherVomitParticle)){
 			//Alarm kills system
-			obj_FatherVomitParticle.alarm[0] = 0;	
+			part_system_destroy(obj_FatherVomitParticle.vomit_sys);
+			instance_destroy(obj_FatherVomitParticle);
 		}
 	}
 	//===================TRANSITION LOGIC=================

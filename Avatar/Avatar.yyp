@@ -559,6 +559,14 @@
             }
         },
         {
+            "Key": "81f850af-1bdd-4b57-b0ca-f67440a4829d",
+            "Value": {
+                "id": "057550c6-e762-4354-af86-ce79919f9df6",
+                "resourcePath": "sprites\\spr_FatherTongue\\spr_FatherTongue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "828e4ad3-0d71-4c2f-9e73-cbff5ca2208d",
             "Value": {
                 "id": "d683e618-490d-4f90-baeb-46f923a215cb",

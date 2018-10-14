@@ -63,7 +63,6 @@ if(menu_committed != -1)
 			instance_deactivate_object(self);
 			instance_deactivate_object(obj_menu_options);
 			instance_deactivate_object(obj_menu_volume);
-			instance_deactivate_object(obj_menu_brightness);
 			instance_deactivate_object(obj_menu_screen);
 			menu_committed = -1;
 			break;

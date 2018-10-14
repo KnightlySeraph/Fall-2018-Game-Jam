@@ -167,14 +167,6 @@
             }
         },
         {
-            "Key": "2ff1fe7e-3e41-41d5-96a1-fd16b3e2e412",
-            "Value": {
-                "id": "fd69077d-1816-4ef3-b592-feb25fe4a70b",
-                "resourcePath": "objects\\obj_menu_brightness\\obj_menu_brightness.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "3980735e-72c5-4dae-b4c0-4bf3355b009e",
             "Value": {
                 "id": "b3e9be63-4486-4b31-9321-30aa38a966db",
@@ -682,7 +674,7 @@
             "Key": "c52226b8-852f-4f58-87f5-474023bb986e",
             "Value": {
                 "id": "91d6d2b0-1ac1-4504-86e8-24bd735eb737",
-                "resourcePath": "objects\\obj_pause_test\\obj_pause_test.yy",
+                "resourcePath": "objects\\obj_pause_input\\obj_pause_input.yy",
                 "resourceType": "GMObject"
             }
         },

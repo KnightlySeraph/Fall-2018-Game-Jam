@@ -40,7 +40,7 @@ if(instance_exists(obj_checkpoint_control))
 {
 	if(obj_checkpoint_control.checked)
 	{
-		x = obj_checkpoint_control.x;
-		y = obj_checkpoint_control.y;
+		x = obj_checkpoint_control.xvalue;
+		y = obj_checkpoint_control.yvalue;
 	}
 }

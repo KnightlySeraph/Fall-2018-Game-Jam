@@ -12,6 +12,12 @@ switch(state)
 				}
 			}
 		}
+		if(place_meeting(x,y,obj_wind) && !immune)
+		{
+			state = "hurt";	
+			immune = true;
+			maxHealth -= 1;
+		}
 		break;
 		
 	case("move"):
@@ -51,7 +57,12 @@ switch(state)
 				move_towards_point(obj_player.x + maxdistance, obj_player.y, spd);
 			}	
 		}
-		
+		if(place_meeting(x,y,obj_wind) && !immune)
+		{
+			state = "hurt";	
+			immune = true;
+			maxHealth -= 1;
+		}
 		break;
 		
 	case("attack"):
@@ -83,6 +94,16 @@ switch(state)
 			state = "idle";
 			cooldown = true;
 			alarm[0] = 30;
+		}
+		break;
+	case("hurt"):
+		sprite_index = spr_frog_big_hurt;
+		attack_timer += 1;
+		if(attack_timer >= 9)
+		{
+			attack_timer = 0;
+			state = "idle";
+			alarm[1] = 20;
 		}
 		break;
 }

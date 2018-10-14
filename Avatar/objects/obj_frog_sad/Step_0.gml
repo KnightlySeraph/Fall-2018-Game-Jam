@@ -102,7 +102,7 @@ if(can_attack && !attacking)
 		image_xscale = 1;	
 		direct = -1;
 	}
-	if((player_y + 20 > y && player_y - 20 < y) && !collision_line(x,y,original_x,player_y,obj_wall,false,false))
+	if((obj_player.y + 60 > y-30 && obj_player.y - 30 < y-30) && !collision_line(x,y,obj_player.x,obj_player.y,obj_wall,false,false))
 	{
 		attacking = true;
 	}
@@ -120,7 +120,7 @@ if(attacking)
 	else if(attack_timer >= 11 && can_attack)
 	{
 		can_attack = false;
-		alarm[1] = 120;
+		alarm[1] = 90;
 		with(instance_create_depth(x,y - 30,depth + 1, obj_projectile))
 		{
 			state = "forward";
@@ -144,5 +144,3 @@ if (last_sprite != sprite_index)
    image_index = 0;
    last_sprite = sprite_index;
 }
-
-

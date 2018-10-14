@@ -19,7 +19,11 @@ fireTwice = false;
 if (instance_exists(obj_player)) { //Check to see if the player exists
 	pX = obj_player.x;
 	pY = obj_player.y;
+	
+	//Edit Player Camera
+	obj_camera.vectorViewSizeFactor += 2;
 }
+
 //Player Range Booleans
 shortRange = false;
 midRange = false;
@@ -43,3 +47,5 @@ introEnded = true;
 facingLeft = true;
 facingRight = false;
 lockState = false;
+goToFireGunAnim = false;
+goToPutAwayGunAnim = false;

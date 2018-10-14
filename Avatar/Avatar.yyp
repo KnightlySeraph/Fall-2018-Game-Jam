@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "697def41-ba27-4b6b-89e3-0e6f426f7779",
+            "Value": {
+                "id": "44a3cfc1-3304-4ec2-9907-b32716d912d3",
+                "resourcePath": "sprites\\spr_FatherGunAway\\spr_FatherGunAway.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a590b98-2fba-44ff-8de9-59fc09b784e3",
             "Value": {
                 "id": "e07d611c-8000-4d37-870f-19f9267b2fe9",

@@ -5,7 +5,7 @@
 //lerpRate is the rate the camera moves to position. It must be a value betweem 1 and 99
 
 //User Variables
-vectorViewSizeFactor = 4;
+vectorViewSizeFactor = 6;
 follow = obj_player;
 lerpRate = 15;
 

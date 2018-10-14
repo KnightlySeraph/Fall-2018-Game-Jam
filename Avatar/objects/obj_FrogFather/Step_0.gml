@@ -38,7 +38,8 @@ else { //Implicitly mid-range
 }
 
 //Debug Distance Key
-
+//Make Cam Larger
+if (keyboard_check_pressed(ord("R"))) { obj_camera.vectorViewSizeFactor += 1; }
 if (keyboard_check_pressed(ord("L"))) { 
 	show_debug_message("Player is " + string(dist)); 
 	//Log out cooldown bools
@@ -90,7 +91,9 @@ if (current_state = states[1]){
 	//Consider Shooting
 	else if (longRange && !gunOnCooldown){
 		//Transition to gun attack
-		current_state = states[4];	
+		current_state = states[4];
+		//Lock the State Machine
+		lockState = true;
 	}
 	//Transition to Movement
 	else{
@@ -119,10 +122,20 @@ if (current_state = states[3]){
 //Gun Event
 if (current_state = states[4]){
 	//Perform the gun attack
+	gunOnCooldown = true;
+	if (!goToFireGunAnim && !goToPutAwayGunAnim){
+		sprite_index = spr_FatherGunDraw;
+	}
+	else if (goToFireGunAnim){
+		sprite_index = spr_FatherFireGun;	
+	}
+	//Animation End event will switch to gun fire
 	
 	//Transition Logic goes here
 	//check stateLock
 	if (lockState == false){
+		//Event is done do cooldown
+		alarm[1] = gunCooldown * room_speed;
 		//Consider Death
 		if(frogFatherHealth <= 0){
 			current_state = states[6];	

@@ -113,3 +113,9 @@ if (last_sprite != sprite_index)
    image_index = 0;
    last_sprite = sprite_index;
 }
+
+if(maxHealth <= 0)
+{
+	instance_destroy(damage_sphere);
+	instance_destroy();	
+}

@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "15c951cf-127c-4fdb-bd1d-b8376f32ca1d",
+            "Value": {
+                "id": "9b44d286-3e64-41b3-8c1a-3c35c8c55272",
+                "resourcePath": "views\\15c951cf-127c-4fdb-bd1d-b8376f32ca1d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "15d560a0-6de6-443a-a7f2-626bc2018b08",
             "Value": {
                 "id": "21a24f29-216b-4c77-88cc-4c76cc0da99b",
@@ -228,6 +236,14 @@
                 "id": "25e32509-5e22-428b-b517-4f3479ddeed1",
                 "resourcePath": "views\\207a9549-7c15-47b1-a13f-465cd951fb05.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "212e9f93-036d-4557-b32a-fa4d15902c79",
+            "Value": {
+                "id": "d5835ff5-5d1d-4558-9d60-61be01367b9b",
+                "resourcePath": "sprites\\spr_new_hover\\spr_new_hover.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -655,6 +671,14 @@
             }
         },
         {
+            "Key": "6dcb013d-cbb9-45e7-ba4e-a8e29a13d559",
+            "Value": {
+                "id": "9af8807d-bec2-42f7-bf45-bb20521c91a3",
+                "resourcePath": "views\\6dcb013d-cbb9-45e7-ba4e-a8e29a13d559.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "70f782b9-9007-4ebf-918a-aec051dda285",
             "Value": {
                 "id": "99e473e9-45e1-4719-b531-6566d19e3dee",
@@ -699,14 +723,6 @@
             "Value": {
                 "id": "05aa5d2f-0821-464b-88ee-86891261b724",
                 "resourcePath": "sprites\\spr_wind\\spr_wind.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "7ffe4933-8cbc-4548-ac13-64906bfbcb6f",
-            "Value": {
-                "id": "76f94736-de6f-4d6f-85c1-ac751357ba9d",
-                "resourcePath": "sprites\\spr_new_hover\\spr_new_hover.yy",
                 "resourceType": "GMSprite"
             }
         },

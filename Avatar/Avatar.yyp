@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "14b0078c-139b-489b-b836-9c745bdf51e5",
+            "Value": {
+                "id": "f1079b9b-7746-4f37-8cfa-dd87032fe122",
+                "resourcePath": "objects\\obj_level_goal\\obj_level_goal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d560a0-6de6-443a-a7f2-626bc2018b08",
             "Value": {
                 "id": "21a24f29-216b-4c77-88cc-4c76cc0da99b",
@@ -140,6 +148,14 @@
                 "id": "9db8d89b-85e2-466b-9114-7c5cd108aebd",
                 "resourcePath": "sprites\\spr_storm\\spr_storm.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "183a3338-0e9b-41e7-9c2a-490b2e73187c",
+            "Value": {
+                "id": "91b49025-0b18-41e8-914e-1fd0ec83e8e9",
+                "resourcePath": "objects\\obj_checkpoint\\obj_checkpoint.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -236,6 +252,14 @@
                 "id": "8c0dfe11-7372-494c-b8d1-ce160ef4a10e",
                 "resourcePath": "sprites\\spr_cloudTile3\\spr_cloudTile3.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2c8f3e12-3c9d-4084-98c1-35fac1ac6a34",
+            "Value": {
+                "id": "cbbb9076-e105-4029-80fa-846302cfec12",
+                "resourcePath": "rooms\\rm_dead\\rm_dead.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -399,6 +423,14 @@
             }
         },
         {
+            "Key": "520d168a-3eca-4bd5-a038-9feb422740fe",
+            "Value": {
+                "id": "21ff9faa-2d35-40c2-b8b0-3e38d4636adb",
+                "resourcePath": "sprites\\spr_balloon_red\\spr_balloon_red.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "52906b92-ebb7-439b-a7b9-efd86e80a124",
             "Value": {
                 "id": "b124e581-949d-4b05-9e55-b2469e446e0f",
@@ -532,6 +564,14 @@
                 "id": "09e068b2-e64a-4e89-9e82-27dc1d35b592",
                 "resourcePath": "objects\\obj_ballon\\obj_ballon.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "70f782b9-9007-4ebf-918a-aec051dda285",
+            "Value": {
+                "id": "99e473e9-45e1-4719-b531-6566d19e3dee",
+                "resourcePath": "sprites\\spr_goal\\spr_goal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -927,6 +967,14 @@
             }
         },
         {
+            "Key": "af4c5c37-7b04-419e-b45c-4af062c63836",
+            "Value": {
+                "id": "edd5bb28-742a-4fd9-8ac0-969e66ffdd7a",
+                "resourcePath": "sprites\\spr_balloon_blue\\spr_balloon_blue.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b01c6d3f-d4f9-44a4-abc4-debacaff1de0",
             "Value": {
                 "id": "7999cfe7-08b3-4da0-8264-7c9c9ca52979",
@@ -1236,6 +1284,14 @@
                 "id": "f2cdeb97-d0ed-486f-864c-378195265f3c",
                 "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f16f2140-73e5-48b9-9c95-240e189aa912",
+            "Value": {
+                "id": "da7838af-84db-493e-bc46-7a55f3e5f1bf",
+                "resourcePath": "objects\\obj_checkpoint_control\\obj_checkpoint_control.yy",
+                "resourceType": "GMObject"
             }
         },
         {

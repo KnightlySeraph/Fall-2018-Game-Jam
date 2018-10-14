@@ -12,13 +12,18 @@ menu_itemheight = font_get_size(fMenu);
 menu_committed = -1;
 menu_control = true;
 
-menu[1] = "Fullscreen";
+menu[2] = "Off";
+menu[1] = "On";
 menu[0] = "Back";
+
+label = "Fullscreen";
 
 menu_items = array_length_1d(menu);
 
 menu_cursor = 4;
 
 menu_top = menu_y - menu_itemheight * 1.5 * menu_items;
+
+is_Full = false;
 
 instance_deactivate_object(self);

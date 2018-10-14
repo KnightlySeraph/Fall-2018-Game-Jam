@@ -46,12 +46,6 @@ if(menu_committed != -1)
 			global.pausestep += 1;
 			break;
 		case 2:
-			instance_activate_object(obj_menu_brightness);
-			instance_deactivate_object(self);
-			menu_committed = -1;
-			global.pausestep += 1;
-			break;
-		case 3:
 			instance_activate_object(obj_menu_volume);
 			instance_deactivate_object(self);
 			menu_committed = -1;

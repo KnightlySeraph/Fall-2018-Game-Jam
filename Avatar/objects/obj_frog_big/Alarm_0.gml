@@ -1,1 +1,1 @@
-state = "idle";
+cooldown = false;

@@ -231,14 +231,6 @@
             }
         },
         {
-            "Key": "2ff1fe7e-3e41-41d5-96a1-fd16b3e2e412",
-            "Value": {
-                "id": "fd69077d-1816-4ef3-b592-feb25fe4a70b",
-                "resourcePath": "objects\\obj_menu_brightness\\obj_menu_brightness.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "31428234-e0cf-4ccd-b717-5ba957818364",
             "Value": {
                 "id": "b86afa95-5922-4aad-b60a-d055429be176",
@@ -475,6 +467,14 @@
             "Value": {
                 "id": "a112e56b-a78f-4d6f-acf2-cb59e0c65048",
                 "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "73665d1d-815a-473e-a842-ccee4a07b01c",
+            "Value": {
+                "id": "39d54f4b-0000-4d8e-8360-e924120f48a6",
+                "resourcePath": "objects\\obj_credits\\obj_credits.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -839,6 +839,14 @@
             }
         },
         {
+            "Key": "b919f2fa-6d7e-45ca-a716-fab30e030f4f",
+            "Value": {
+                "id": "833ee68a-e64c-437d-8741-074b9bebac7e",
+                "resourcePath": "objects\\obj_menu_deathscreen\\obj_menu_deathscreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bc4607de-743d-4935-a37a-480bc3029a1f",
             "Value": {
                 "id": "1d9b37ed-0371-44a8-8366-8121189514ee",
@@ -876,14 +884,6 @@
                 "id": "d4d552cb-958a-4902-81e7-b7fc311dddf0",
                 "resourcePath": "sprites\\spr_flag_of_the_frog_people\\spr_flag_of_the_frog_people.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c52226b8-852f-4f58-87f5-474023bb986e",
-            "Value": {
-                "id": "91d6d2b0-1ac1-4504-86e8-24bd735eb737",
-                "resourcePath": "objects\\obj_pause_test\\obj_pause_test.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -951,6 +951,14 @@
             }
         },
         {
+            "Key": "da396885-230e-4924-a386-4facfdd28b0c",
+            "Value": {
+                "id": "cb9b0038-dba2-4259-a630-df0b420b5a42",
+                "resourcePath": "rooms\\rm_credits\\rm_credits.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "db33a888-a3d4-44ee-8eb8-450fa4a003c6",
             "Value": {
                 "id": "25b111ce-4200-4906-b77e-a0fe7191bc70",
@@ -980,6 +988,14 @@
                 "id": "923b76b8-aa12-4f05-b322-8662343b23a2",
                 "resourcePath": "sprites\\spr_frog_sad_attack\\spr_frog_sad_attack.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e2a19f00-eb59-4059-b477-c1d50b9bcdba",
+            "Value": {
+                "id": "bb010d14-3481-4dbd-813e-d20b0523e280",
+                "resourcePath": "fonts\\fCredits\\fCredits.yy",
+                "resourceType": "GMFont"
             }
         },
         {

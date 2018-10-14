@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "0850dfbc-3d20-4835-a279-8098051f9f54",
+            "Value": {
+                "id": "6ddc6a97-2739-454f-ab1c-622afcb1f8bd",
+                "resourcePath": "sprites\\spr_CloudTile1\\spr_CloudTile1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "089cbb96-c114-44c4-9769-ccf5f89625e0",
             "Value": {
                 "id": "0c7c05e2-cfaf-4da1-9230-f2d0d821a7f6",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "2222b087-49be-4408-bccf-6c1ef81a6ca7",
+            "Value": {
+                "id": "cc847ab8-2c14-4110-b805-0d2b2840b23a",
+                "resourcePath": "sprites\\spr_cloudTile2\\spr_cloudTile2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "25479a7b-2eba-4919-8b38-3bf008bbf655",
             "Value": {
                 "id": "e5270d97-947e-4db4-a7a0-c06b9da10d9c",
@@ -171,6 +187,14 @@
             "Value": {
                 "id": "fecb9416-2de1-4d07-9c59-340c014ccd90",
                 "resourcePath": "sprites\\spr_groundTile2\\spr_groundTile2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2bc3257a-7b22-40da-9d04-026f17e0d21f",
+            "Value": {
+                "id": "8c0dfe11-7372-494c-b8d1-ce160ef4a10e",
+                "resourcePath": "sprites\\spr_cloudTile3\\spr_cloudTile3.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -323,6 +347,14 @@
             "Value": {
                 "id": "b124e581-949d-4b05-9e55-b2469e446e0f",
                 "resourcePath": "sprites\\spr_frog_sad\\spr_frog_sad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "54c4060b-cb97-406a-9fb1-2aa51b9efbc2",
+            "Value": {
+                "id": "cd2417d4-9470-4552-b1fb-e2962844fb43",
+                "resourcePath": "sprites\\spr_cloudTile4\\spr_cloudTile4.yy",
                 "resourceType": "GMSprite"
             }
         },

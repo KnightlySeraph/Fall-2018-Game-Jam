@@ -18,7 +18,11 @@
         "cf2c97cd-d24e-4ce4-bd38-d1a6cafd5c63",
         "0cc2fb76-ec30-4d57-b840-82d2d55e300e",
         "089cbb96-c114-44c4-9769-ccf5f89625e0",
-        "175e2157-59d1-4b85-bcf1-7300f4e8048d"
+        "175e2157-59d1-4b85-bcf1-7300f4e8048d",
+        "0850dfbc-3d20-4835-a279-8098051f9f54",
+        "2222b087-49be-4408-bccf-6c1ef81a6ca7",
+        "2bc3257a-7b22-40da-9d04-026f17e0d21f",
+        "54c4060b-cb97-406a-9fb1-2aa51b9efbc2"
     ],
     "filterType": "GMSprite",
     "folderName": "Environment Sprites",

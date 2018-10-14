@@ -783,6 +783,14 @@
             }
         },
         {
+            "Key": "b919f2fa-6d7e-45ca-a716-fab30e030f4f",
+            "Value": {
+                "id": "833ee68a-e64c-437d-8741-074b9bebac7e",
+                "resourcePath": "objects\\obj_menu_deathscreen\\obj_menu_deathscreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bc4607de-743d-4935-a37a-480bc3029a1f",
             "Value": {
                 "id": "1d9b37ed-0371-44a8-8366-8121189514ee",

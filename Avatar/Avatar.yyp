@@ -1159,6 +1159,14 @@
             }
         },
         {
+            "Key": "e8a2e7b5-012e-4f93-9390-e9087f4aa027",
+            "Value": {
+                "id": "ec8e6b80-1aad-43ab-b65c-403363468fe3",
+                "resourcePath": "sprites\\spr_pinwheel_spin\\spr_pinwheel_spin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ec5d6857-8e0e-4d7e-bc22-854bfb0ee5f0",
             "Value": {
                 "id": "18f45a1d-989c-4356-825a-976a2a6f8dc3",

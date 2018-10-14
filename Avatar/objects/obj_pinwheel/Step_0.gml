@@ -5,10 +5,12 @@ if(wall != noone)
 		if(place_meeting(x,y,obj_wind))
 		{
 			wall.receivingLeftFacingInput = true;
+			sprite_index = spr_pinwheel_spin;
 		}
 		else
 		{
 			wall.receivingLeftFacingInput = false;	
+			sprite_index = spr_pinwheel;
 		}
 	}
 	else
@@ -16,10 +18,12 @@ if(wall != noone)
 		if(place_meeting(x,y,obj_wind))
 		{
 			wall.receivingBottomFacingInput = true;
+			sprite_index = spr_pinwheel_spin;
 		}
 		else
 		{
-			wall.receivingBottomFacingInput = false;	
+			wall.receivingBottomFacingInput = false;
+			sprite_index = spr_pinwheel;
 		}
 	}
 }

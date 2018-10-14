@@ -88,7 +88,7 @@ switch(state)
 			}
 		}
 		
-		if(attack_timer >= 43)
+		if(attack_timer >= 41)
 		{
 			attack_timer = 0;
 			state = "idle";

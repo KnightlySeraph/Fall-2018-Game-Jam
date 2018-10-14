@@ -21,7 +21,7 @@ leftright = 0;
 direct = 1;
 
 shooting = false;
-windMax = 200;
+windMax = 300;
 windPower = windMax;
 recharge = false;
 refillWind = false;

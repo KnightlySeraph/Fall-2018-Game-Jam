@@ -92,7 +92,7 @@ switch(state)
 
 if(can_attack && !attacking)
 {
-	if(player_x > x)
+	if(obj_player.x > x)
 	{
 		image_xscale = -1;
 		direct = 1;

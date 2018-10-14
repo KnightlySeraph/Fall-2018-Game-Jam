@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "9e6f7837-7b77-4271-83e9-73b6b9520ae1",
+            "Value": {
+                "id": "dfe88b3e-42f9-44e9-8972-263841a86249",
+                "resourcePath": "sprites\\spr_frog_ninja\\spr_frog_ninja.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9ed514f8-db2c-499e-a26c-db08ed00fafe",
             "Value": {
                 "id": "e4cb59ab-b4f9-4937-9e93-c62dfd47b244",
@@ -732,6 +740,14 @@
                 "id": "c7dc2fa7-ce46-462b-a601-788502052741",
                 "resourcePath": "sprites\\spr_cloud1\\spr_cloud1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db33a888-a3d4-44ee-8eb8-450fa4a003c6",
+            "Value": {
+                "id": "25b111ce-4200-4906-b77e-a0fe7191bc70",
+                "resourcePath": "objects\\obj_frog_ninja\\obj_frog_ninja.yy",
+                "resourceType": "GMObject"
             }
         },
         {
